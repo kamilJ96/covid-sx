@@ -1,0 +1,1592 @@
+
+-------------- ABP - Real Estate --------------
+High Date: 2020.02.18 | Price: 3.922734
+Low Date:  2020.03.23 | Price: 1.893567
+Difference: 2.03 | Percent Change: 69.78%
+Current Price: 2.84 | Diff From High: -1.08 | Diff From Low: 0.95
+-------------- ABP - Real Estate --------------
+
+
+-------------- ABC - Materials --------------
+High Date: 2020.01.24 | Price: 3.839447
+Low Date:  2020.03.23 | Price: 1.792719
+Difference: 2.05 | Percent Change: 72.68%
+Current Price: 2.77 | Diff From High: -1.07 | Diff From Low: 0.98
+-------------- ABC - Materials --------------
+
+
+-------------- APT - Information Technology --------------
+High Date: 2020.08.25 | Price: 92.480003
+Low Date:  2020.03.23 | Price: 8.9
+Difference: 83.58 | Percent Change: 164.88%
+Current Price: 83.79 | Diff From High: -8.69 | Diff From Low: 74.89
+-------------- APT - Information Technology --------------
+
+
+-------------- AGL - Utilities --------------
+High Date: 2020.02.20 | Price: 19.967541
+Low Date:  2020.08.28 | Price: 14.79
+Difference: 5.18 | Percent Change: 29.79%
+Current Price: 15.25 | Diff From High: -4.72 | Diff From Low: 0.46
+-------------- AGL - Utilities --------------
+
+
+-------------- ALQ - Industrials --------------
+High Date: 2020.02.20 | Price: 9.857392
+Low Date:  2020.03.24 | Price: 4.601439
+Difference: 5.26 | Percent Change: 72.70%
+Current Price: 8.92 | Diff From High: -0.94 | Diff From Low: 4.32
+-------------- ALQ - Industrials --------------
+
+
+-------------- ALU - Information Technology --------------
+High Date: 2020.02.17 | Price: 42.135723
+Low Date:  2020.03.23 | Price: 24.541582
+Difference: 17.59 | Percent Change: 52.77%
+Current Price: 36.31 | Diff From High: -5.83 | Diff From Low: 11.77
+-------------- ALU - Information Technology --------------
+
+
+-------------- AWC - Materials --------------
+High Date: 2020.01.22 | Price: 2.219866
+Low Date:  2020.04.03 | Price: 1.292897
+Difference: 0.93 | Percent Change: 52.78%
+Current Price: 1.53 | Diff From High: -0.69 | Diff From Low: 0.24
+-------------- AWC - Materials --------------
+
+
+-------------- AMC - Materials --------------
+High Date: 2020.02.06 | Price: 15.724915
+Low Date:  2020.03.17 | Price: 9.912385
+Difference: 5.81 | Percent Change: 45.34%
+Current Price: 15.40 | Diff From High: -0.32 | Diff From Low: 5.49
+-------------- AMC - Materials --------------
+
+
+-------------- AMP - Financials --------------
+High Date: 2020.02.19 | Price: 2.08
+Low Date:  2020.03.24 | Price: 1.11
+Difference: 0.97 | Percent Change: 60.82%
+Current Price: 1.66 | Diff From High: -0.42 | Diff From Low: 0.55
+-------------- AMP - Financials --------------
+
+
+-------------- ANN - Health Care --------------
+High Date: 2020.08.27 | Price: 40.188782
+Low Date:  2020.03.23 | Price: 21.223398
+Difference: 18.97 | Percent Change: 61.76%
+Current Price: 37.42 | Diff From High: -2.77 | Diff From Low: 16.20
+-------------- ANN - Health Care --------------
+
+
+-------------- APE - Consumer Discretionary --------------
+High Date: 2020.01.15 | Price: 10.096624
+Low Date:  2020.03.25 | Price: 2.79125
+Difference: 7.31 | Percent Change: 113.37%
+Current Price: 8.94 | Diff From High: -1.16 | Diff From Low: 6.15
+-------------- APE - Consumer Discretionary --------------
+
+
+-------------- APA - Utilities --------------
+High Date: 2020.08.11 | Price: 11.49
+Low Date:  2020.03.16 | Price: 8.163036
+Difference: 3.33 | Percent Change: 33.86%
+Current Price: 10.65 | Diff From High: -0.84 | Diff From Low: 2.49
+-------------- APA - Utilities --------------
+
+
+-------------- APX - Information Technology --------------
+High Date: 2020.08.26 | Price: 43.443604
+Low Date:  2020.03.12 | Price: 17.117779
+Difference: 26.33 | Percent Change: 86.94%
+Current Price: 34.90 | Diff From High: -8.54 | Diff From Low: 17.78
+-------------- APX - Information Technology --------------
+
+
+-------------- ARB - Consumer Discretionary --------------
+High Date: 2020.09.03 | Price: 27.91
+Low Date:  2020.03.23 | Price: 10.666847
+Difference: 17.24 | Percent Change: 89.40%
+Current Price: 27.91 | Diff From High: 0.00 | Diff From Low: 17.24
+-------------- ARB - Consumer Discretionary --------------
+
+
+-------------- ALL - Consumer Discretionary --------------
+High Date: 2020.02.20 | Price: 37.689999
+Low Date:  2020.03.23 | Price: 15.44
+Difference: 22.25 | Percent Change: 83.76%
+Current Price: 29.68 | Diff From High: -8.01 | Diff From Low: 14.24
+-------------- ALL - Consumer Discretionary --------------
+
+
+-------------- ASX - Financials --------------
+High Date: 2020.09.03 | Price: 90.510002
+Low Date:  2020.03.16 | Price: 64.760002
+Difference: 25.75 | Percent Change: 33.17%
+Current Price: 90.51 | Diff From High: 0.00 | Diff From Low: 25.75
+-------------- ASX - Financials --------------
+
+
+-------------- ALX - Industrials --------------
+High Date: 2020.02.19 | Price: 8.5
+Low Date:  2020.03.23 | Price: 4.33
+Difference: 4.17 | Percent Change: 65.00%
+Current Price: 6.69 | Diff From High: -1.81 | Diff From Low: 2.36
+-------------- ALX - Industrials --------------
+
+
+-------------- AZJ - Industrials --------------
+High Date: 2020.01.17 | Price: 5.346547
+Low Date:  2020.03.20 | Price: 3.571811
+Difference: 1.77 | Percent Change: 39.80%
+Current Price: 4.41 | Diff From High: -0.94 | Diff From Low: 0.84
+-------------- AZJ - Industrials --------------
+
+
+-------------- AST - Utilities --------------
+High Date: 2020.05.12 | Price: 1.946736
+Low Date:  2020.03.16 | Price: 1.508721
+Difference: 0.44 | Percent Change: 25.35%
+Current Price: 1.88 | Diff From High: -0.07 | Diff From Low: 0.37
+-------------- AST - Utilities --------------
+
+
+-------------- ASB - Industrials --------------
+High Date: 2020.02.20 | Price: 4.334533
+Low Date:  2020.03.23 | Price: 2.31
+Difference: 2.02 | Percent Change: 60.94%
+Current Price: 3.40 | Diff From High: -0.93 | Diff From Low: 1.09
+-------------- ASB - Industrials --------------
+
+
+-------------- ANZ - Financials --------------
+High Date: 2020.02.21 | Price: 26.86949
+Low Date:  2020.03.23 | Price: 13.908216
+Difference: 12.96 | Percent Change: 63.57%
+Current Price: 18.37 | Diff From High: -8.50 | Diff From Low: 4.46
+-------------- ANZ - Financials --------------
+
+
+-------------- AVH - Health Care --------------
+High Date: 2020.06.19 | Price: 9.1
+Low Date:  2020.03.19 | Price: 0.34
+Difference: 8.76 | Percent Change: 185.59%
+Current Price: 7.20 | Diff From High: -1.90 | Diff From Low: 6.86
+-------------- AVH - Health Care --------------
+
+
+-------------- BOQ - Financials --------------
+High Date: 2020.02.21 | Price: 7.68
+Low Date:  2020.05.14 | Price: 4.6
+Difference: 3.08 | Percent Change: 50.16%
+Current Price: 6.29 | Diff From High: -1.39 | Diff From Low: 1.69
+-------------- BOQ - Financials --------------
+
+
+-------------- BAP - Consumer Discretionary --------------
+High Date: 2020.09.03 | Price: 7.21
+Low Date:  2020.03.25 | Price: 3.107553
+Difference: 4.10 | Percent Change: 79.52%
+Current Price: 7.21 | Diff From High: 0.00 | Diff From Low: 4.10
+-------------- BAP - Consumer Discretionary --------------
+
+
+-------------- BPT - Energy --------------
+High Date: 2020.01.20 | Price: 2.836253
+Low Date:  2020.03.23 | Price: 0.94377
+Difference: 1.89 | Percent Change: 100.13%
+Current Price: 1.50 | Diff From High: -1.33 | Diff From Low: 0.56
+-------------- BPT - Energy --------------
+
+
+-------------- BGA - Consumer Staples --------------
+High Date: 2020.09.02 | Price: 5.55
+Low Date:  2020.01.06 | Price: 3.875251
+Difference: 1.67 | Percent Change: 35.54%
+Current Price: 5.54 | Diff From High: -0.01 | Diff From Low: 1.66
+-------------- BGA - Consumer Staples --------------
+
+
+-------------- BEN - Financials --------------
+High Date: 2020.02.17 | Price: 10.183141
+Low Date:  2020.03.24 | Price: 5.47
+Difference: 4.71 | Percent Change: 60.22%
+Current Price: 6.53 | Diff From High: -3.65 | Diff From Low: 1.06
+-------------- BEN - Financials --------------
+
+
+-------------- BHP - Materials --------------
+High Date: 2020.08.11 | Price: 39.400494
+Low Date:  2020.03.16 | Price: 24.698818
+Difference: 14.70 | Percent Change: 45.87%
+Current Price: 37.61 | Diff From High: -1.79 | Diff From Low: 12.91
+-------------- BHP - Materials --------------
+
+
+-------------- BIN - Industrials --------------
+High Date: 2020.02.21 | Price: 3.15424
+Low Date:  2020.03.25 | Price: 1.808131
+Difference: 1.35 | Percent Change: 54.25%
+Current Price: 2.28 | Diff From High: -0.87 | Diff From Low: 0.47
+-------------- BIN - Industrials --------------
+
+
+-------------- BKL - Consumer Staples --------------
+High Date: 2020.02.05 | Price: 94.949997
+Low Date:  2020.09.01 | Price: 60.330002
+Difference: 34.62 | Percent Change: 44.59%
+Current Price: 64.12 | Diff From High: -30.83 | Diff From Low: 3.79
+-------------- BKL - Consumer Staples --------------
+
+
+-------------- BSL - Materials --------------
+High Date: 2020.01.14 | Price: 15.921311
+Low Date:  2020.03.23 | Price: 8.14
+Difference: 7.78 | Percent Change: 64.68%
+Current Price: 13.26 | Diff From High: -2.66 | Diff From Low: 5.12
+-------------- BSL - Materials --------------
+
+
+-------------- BLD - Materials --------------
+High Date: 2020.02.06 | Price: 5.04939
+Low Date:  2020.03.24 | Price: 1.785
+Difference: 3.26 | Percent Change: 95.53%
+Current Price: 4.10 | Diff From High: -0.95 | Diff From Low: 2.31
+-------------- BLD - Materials --------------
+
+
+-------------- BXB - Industrials --------------
+High Date: 2020.02.17 | Price: 12.979878
+Low Date:  2020.03.18 | Price: 9.27
+Difference: 3.71 | Percent Change: 33.35%
+Current Price: 11.16 | Diff From High: -1.82 | Diff From Low: 1.89
+-------------- BXB - Industrials --------------
+
+
+-------------- BVS - Information Technology --------------
+High Date: 2020.01.24 | Price: 5.692131
+Low Date:  2020.03.23 | Price: 3.004662
+Difference: 2.69 | Percent Change: 61.80%
+Current Price: 3.65 | Diff From High: -2.05 | Diff From Low: 0.64
+-------------- BVS - Information Technology --------------
+
+
+-------------- BRG - Consumer Discretionary --------------
+High Date: 2020.09.03 | Price: 29.32
+Low Date:  2020.03.23 | Price: 10.8
+Difference: 18.52 | Percent Change: 92.32%
+Current Price: 29.32 | Diff From High: 0.00 | Diff From Low: 18.52
+-------------- BRG - Consumer Discretionary --------------
+
+
+-------------- BKW - Materials --------------
+High Date: 2020.01.24 | Price: 20.338301
+Low Date:  2020.04.22 | Price: 12.17
+Difference: 8.17 | Percent Change: 50.25%
+Current Price: 18.41 | Diff From High: -1.93 | Diff From Low: 6.24
+-------------- BKW - Materials --------------
+
+
+-------------- BWP - Real Estate --------------
+High Date: 2020.08.18 | Price: 4.08
+Low Date:  2020.03.23 | Price: 2.666574
+Difference: 1.41 | Percent Change: 41.90%
+Current Price: 4.06 | Diff From High: -0.02 | Diff From Low: 1.39
+-------------- BWP - Real Estate --------------
+
+
+-------------- CAR - Communication Services --------------
+High Date: 2020.09.03 | Price: 21.33
+Low Date:  2020.03.23 | Price: 10.47
+Difference: 10.86 | Percent Change: 68.30%
+Current Price: 21.33 | Diff From High: 0.00 | Diff From Low: 10.86
+-------------- CAR - Communication Services --------------
+
+
+-------------- CGF - Financials --------------
+High Date: 2020.02.20 | Price: 10.199613
+Low Date:  2020.03.23 | Price: 2.97
+Difference: 7.23 | Percent Change: 109.79%
+Current Price: 4.02 | Diff From High: -6.18 | Diff From Low: 1.05
+-------------- CGF - Financials --------------
+
+
+-------------- CHC - Real Estate --------------
+High Date: 2020.02.19 | Price: 13.771268
+Low Date:  2020.03.23 | Price: 5.192445
+Difference: 8.58 | Percent Change: 90.48%
+Current Price: 13.00 | Diff From High: -0.77 | Diff From Low: 7.81
+-------------- CHC - Real Estate --------------
+
+
+-------------- CLW - Real Estate --------------
+High Date: 2020.02.19 | Price: 5.716086
+Low Date:  2020.03.23 | Price: 3.414177
+Difference: 2.30 | Percent Change: 50.42%
+Current Price: 5.06 | Diff From High: -0.66 | Diff From Low: 1.65
+-------------- CLW - Real Estate --------------
+
+
+-------------- CQR - Real Estate --------------
+High Date: 2020.02.20 | Price: 4.904047
+Low Date:  2020.03.23 | Price: 2.728786
+Difference: 2.18 | Percent Change: 57.00%
+Current Price: 3.41 | Diff From High: -1.49 | Diff From Low: 0.68
+-------------- CQR - Real Estate --------------
+
+
+-------------- CNU - Telecommunication Services --------------
+High Date: 2020.09.03 | Price: 7.87
+Low Date:  2020.01.02 | Price: 5.795218
+Difference: 2.07 | Percent Change: 30.37%
+Current Price: 7.87 | Diff From High: 0.00 | Diff From Low: 2.07
+-------------- CNU - Telecommunication Services --------------
+
+
+-------------- CIM - Industrials --------------
+High Date: 2020.01.17 | Price: 35.32
+Low Date:  2020.03.19 | Price: 13
+Difference: 22.32 | Percent Change: 92.38%
+Current Price: 21.40 | Diff From High: -13.92 | Diff From Low: 8.40
+-------------- CIM - Industrials --------------
+
+
+-------------- CWY - Industrials --------------
+High Date: 2020.09.03 | Price: 2.59
+Low Date:  2020.03.23 | Price: 1.425
+Difference: 1.16 | Percent Change: 58.03%
+Current Price: 2.59 | Diff From High: 0.00 | Diff From Low: 1.16
+-------------- CWY - Industrials --------------
+
+
+-------------- CUV - Health Care --------------
+High Date: 2020.01.17 | Price: 29.27441
+Low Date:  2020.03.16 | Price: 13.603462
+Difference: 15.67 | Percent Change: 73.10%
+Current Price: 20.76 | Diff From High: -8.51 | Diff From Low: 7.16
+-------------- CUV - Health Care --------------
+
+
+-------------- CCL - Consumer Staples --------------
+High Date: 2020.02.20 | Price: 12.681664
+Low Date:  2020.03.27 | Price: 7.864461
+Difference: 4.82 | Percent Change: 46.89%
+Current Price: 9.25 | Diff From High: -3.43 | Diff From Low: 1.39
+-------------- CCL - Consumer Staples --------------
+
+
+-------------- COH - Health Care --------------
+High Date: 2020.02.19 | Price: 249.025192
+Low Date:  2020.03.23 | Price: 157.809998
+Difference: 91.22 | Percent Change: 44.84%
+Current Price: 197.31 | Diff From High: -51.72 | Diff From Low: 39.50
+-------------- COH - Health Care --------------
+
+
+-------------- COL - Consumer Staples --------------
+High Date: 2020.08.14 | Price: 18.842241
+Low Date:  2020.02.28 | Price: 14.003569
+Difference: 4.84 | Percent Change: 29.46%
+Current Price: 17.71 | Diff From High: -1.13 | Diff From Low: 3.71
+-------------- COL - Consumer Staples --------------
+
+
+-------------- CKF - Consumer Discretionary --------------
+High Date: 2020.08.25 | Price: 10.85
+Low Date:  2020.03.23 | Price: 4.270318
+Difference: 6.58 | Percent Change: 87.03%
+Current Price: 10.51 | Diff From High: -0.34 | Diff From Low: 6.24
+-------------- CKF - Consumer Discretionary --------------
+
+
+-------------- CBA - Financials --------------
+High Date: 2020.02.14 | Price: 87.736671
+Low Date:  2020.03.23 | Price: 53.505531
+Difference: 34.23 | Percent Change: 48.47%
+Current Price: 68.18 | Diff From High: -19.56 | Diff From Low: 14.67
+-------------- CBA - Financials --------------
+
+
+-------------- CPU - Information Technology --------------
+High Date: 2020.02.06 | Price: 17.593409
+Low Date:  2020.03.24 | Price: 8.456355
+Difference: 9.14 | Percent Change: 70.15%
+Current Price: 13.05 | Diff From High: -4.54 | Diff From Low: 4.59
+-------------- CPU - Information Technology --------------
+
+
+-------------- COE - Energy --------------
+High Date: 2020.01.03 | Price: 0.63
+Low Date:  2020.08.31 | Price: 0.33
+Difference: 0.30 | Percent Change: 62.50%
+Current Price: 0.36 | Diff From High: -0.27 | Diff From Low: 0.03
+-------------- COE - Energy --------------
+
+
+-------------- CTD - Consumer Discretionary --------------
+High Date: 2020.01.17 | Price: 21.82506
+Low Date:  2020.03.19 | Price: 4.7
+Difference: 17.13 | Percent Change: 129.12%
+Current Price: 15.74 | Diff From High: -6.09 | Diff From Low: 11.04
+-------------- CTD - Consumer Discretionary --------------
+
+
+-------------- CGC - Consumer Staples --------------
+High Date: 2020.09.02 | Price: 3.68
+Low Date:  2020.01.06 | Price: 2.393716
+Difference: 1.29 | Percent Change: 42.36%
+Current Price: 3.65 | Diff From High: -0.03 | Diff From Low: 1.26
+-------------- CGC - Consumer Staples --------------
+
+
+-------------- CCP - Financials --------------
+High Date: 2020.02.20 | Price: 37.417313
+Low Date:  2020.03.23 | Price: 6.25
+Difference: 31.17 | Percent Change: 142.75%
+Current Price: 19.61 | Diff From High: -17.81 | Diff From Low: 13.36
+-------------- CCP - Financials --------------
+
+
+-------------- CMW - Real Estate --------------
+High Date: 2020.02.19 | Price: 1.177212
+Low Date:  2020.03.23 | Price: 0.684314
+Difference: 0.49 | Percent Change: 52.96%
+Current Price: 0.92 | Diff From High: -0.26 | Diff From Low: 0.23
+-------------- CMW - Real Estate --------------
+
+
+-------------- CWN - Consumer Discretionary --------------
+High Date: 2020.01.16 | Price: 12.071418
+Low Date:  2020.03.19 | Price: 6
+Difference: 6.07 | Percent Change: 67.19%
+Current Price: 9.40 | Diff From High: -2.67 | Diff From Low: 3.40
+-------------- CWN - Consumer Discretionary --------------
+
+
+-------------- CSL - Health Care --------------
+High Date: 2020.02.19 | Price: 339.37619
+Low Date:  2020.07.31 | Price: 270.100006
+Difference: 69.28 | Percent Change: 22.73%
+Current Price: 290.95 | Diff From High: -48.43 | Diff From Low: 20.85
+-------------- CSL - Health Care --------------
+
+
+-------------- CSR - Materials --------------
+High Date: 2020.01.16 | Price: 5.06
+Low Date:  2020.03.23 | Price: 2.82
+Difference: 2.24 | Percent Change: 56.85%
+Current Price: 3.73 | Diff From High: -1.33 | Diff From Low: 0.91
+-------------- CSR - Materials --------------
+
+
+-------------- DXS - Real Estate --------------
+High Date: 2020.02.20 | Price: 13.098031
+Low Date:  2020.03.23 | Price: 8.013028
+Difference: 5.09 | Percent Change: 48.17%
+Current Price: 9.13 | Diff From High: -3.97 | Diff From Low: 1.12
+-------------- DXS - Real Estate --------------
+
+
+-------------- DHG - Communication Services --------------
+High Date: 2020.01.15 | Price: 3.946851
+Low Date:  2020.03.23 | Price: 1.715
+Difference: 2.23 | Percent Change: 78.84%
+Current Price: 3.89 | Diff From High: -0.06 | Diff From Low: 2.17
+-------------- DHG - Communication Services --------------
+
+
+-------------- DMP - Consumer Discretionary --------------
+High Date: 2020.08.27 | Price: 86.489998
+Low Date:  2020.03.19 | Price: 44.475338
+Difference: 42.01 | Percent Change: 64.16%
+Current Price: 84.84 | Diff From High: -1.65 | Diff From Low: 40.36
+-------------- DMP - Consumer Discretionary --------------
+
+
+-------------- DOW - Industrials --------------
+High Date: 2020.01.21 | Price: 8.689909
+Low Date:  2020.03.24 | Price: 2.73
+Difference: 5.96 | Percent Change: 104.38%
+Current Price: 4.46 | Diff From High: -4.23 | Diff From Low: 1.73
+-------------- DOW - Industrials --------------
+
+
+-------------- ELD - Consumer Staples --------------
+High Date: 2020.07.29 | Price: 10.59
+Low Date:  2020.01.08 | Price: 6.033611
+Difference: 4.56 | Percent Change: 54.82%
+Current Price: 10.54 | Diff From High: -0.05 | Diff From Low: 4.51
+-------------- ELD - Consumer Staples --------------
+
+
+-------------- EML - Information Technology --------------
+High Date: 2020.02.14 | Price: 5.66
+Low Date:  2020.03.24 | Price: 1.33
+Difference: 4.33 | Percent Change: 123.89%
+Current Price: 3.18 | Diff From High: -2.48 | Diff From Low: 1.85
+-------------- EML - Information Technology --------------
+
+
+-------------- EHE - Health Care --------------
+High Date: 2020.01.22 | Price: 2.531512
+Low Date:  2020.03.23 | Price: 0.905
+Difference: 1.63 | Percent Change: 94.66%
+Current Price: 1.52 | Diff From High: -1.01 | Diff From Low: 0.61
+-------------- EHE - Health Care --------------
+
+
+-------------- EVN - Materials --------------
+High Date: 2020.07.22 | Price: 6.340583
+Low Date:  2020.03.16 | Price: 3.30813
+Difference: 3.03 | Percent Change: 62.86%
+Current Price: 5.64 | Diff From High: -0.70 | Diff From Low: 2.33
+-------------- EVN - Materials --------------
+
+
+-------------- FPH - Health Care --------------
+High Date: 2020.07.15 | Price: 34.919998
+Low Date:  2020.01.13 | Price: 20.677685
+Difference: 14.24 | Percent Change: 51.23%
+Current Price: 33.50 | Diff From High: -1.42 | Diff From Low: 12.82
+-------------- FPH - Health Care --------------
+
+
+-------------- FBU - Materials --------------
+High Date: 2020.01.24 | Price: 5.314275
+Low Date:  2020.05.22 | Price: 3
+Difference: 2.31 | Percent Change: 55.67%
+Current Price: 3.39 | Diff From High: -1.92 | Diff From Low: 0.39
+-------------- FBU - Materials --------------
+
+
+-------------- FLT - Consumer Discretionary --------------
+High Date: 2020.01.07 | Price: 42.953339
+Low Date:  2020.04.23 | Price: 8.75
+Difference: 34.20 | Percent Change: 132.31%
+Current Price: 12.90 | Diff From High: -30.05 | Diff From Low: 4.15
+-------------- FLT - Consumer Discretionary --------------
+
+
+-------------- FMG - Materials --------------
+High Date: 2020.08.27 | Price: 18.277212
+Low Date:  2020.03.09 | Price: 8.12531
+Difference: 10.15 | Percent Change: 76.90%
+Current Price: 18.14 | Diff From High: -0.14 | Diff From Low: 10.01
+-------------- FMG - Materials --------------
+
+
+-------------- GUD - Consumer Discretionary --------------
+High Date: 2020.02.12 | Price: 12.291613
+Low Date:  2020.03.23 | Price: 7.55161
+Difference: 4.74 | Percent Change: 47.77%
+Current Price: 11.44 | Diff From High: -0.85 | Diff From Low: 3.89
+-------------- GUD - Consumer Discretionary --------------
+
+
+-------------- GEM - Consumer Discretionary --------------
+High Date: 2020.01.14 | Price: 1.932137
+Low Date:  2020.03.23 | Price: 0.52
+Difference: 1.41 | Percent Change: 115.18%
+Current Price: 1.02 | Diff From High: -0.91 | Diff From Low: 0.50
+-------------- GEM - Consumer Discretionary --------------
+
+
+-------------- GOR - Materials --------------
+High Date: 2020.07.22 | Price: 1.975
+Low Date:  2020.03.16 | Price: 0.805
+Difference: 1.17 | Percent Change: 84.17%
+Current Price: 1.53 | Diff From High: -0.44 | Diff From Low: 0.73
+-------------- GOR - Materials --------------
+
+
+-------------- GMG - Real Estate --------------
+High Date: 2020.09.03 | Price: 18.620001
+Low Date:  2020.03.19 | Price: 9.604777
+Difference: 9.02 | Percent Change: 63.88%
+Current Price: 18.62 | Diff From High: 0.00 | Diff From Low: 9.02
+-------------- GMG - Real Estate --------------
+
+
+-------------- GPT - Real Estate --------------
+High Date: 2020.02.10 | Price: 6.194055
+Low Date:  2020.03.23 | Price: 2.930941
+Difference: 3.26 | Percent Change: 71.52%
+Current Price: 3.89 | Diff From High: -2.30 | Diff From Low: 0.96
+-------------- GPT - Real Estate --------------
+
+
+-------------- GNC - Consumer Staples --------------
+High Date: 2020.02.11 | Price: 8.93
+Low Date:  2020.03.25 | Price: 2.9
+Difference: 6.03 | Percent Change: 101.94%
+Current Price: 4.51 | Diff From High: -4.42 | Diff From Low: 1.61
+-------------- GNC - Consumer Staples --------------
+
+
+-------------- GOZ - Real Estate --------------
+High Date: 2020.02.19 | Price: 4.319883
+Low Date:  2020.03.24 | Price: 2.252164
+Difference: 2.07 | Percent Change: 62.92%
+Current Price: 3.41 | Diff From High: -0.91 | Diff From Low: 1.16
+-------------- GOZ - Real Estate --------------
+
+
+-------------- GWA - Industrials --------------
+High Date: 2020.02.17 | Price: 3.899798
+Low Date:  2020.04.23 | Price: 2.28
+Difference: 1.62 | Percent Change: 52.42%
+Current Price: 2.62 | Diff From High: -1.28 | Diff From Low: 0.34
+-------------- GWA - Industrials --------------
+
+
+-------------- HVN - Consumer Discretionary --------------
+High Date: 2020.02.19 | Price: 4.536756
+Low Date:  2020.03.23 | Price: 2.320254
+Difference: 2.22 | Percent Change: 64.65%
+Current Price: 4.45 | Diff From High: -0.09 | Diff From Low: 2.13
+-------------- HVN - Consumer Discretionary --------------
+
+
+-------------- HLS - Health Care --------------
+High Date: 2020.09.03 | Price: 3.42
+Low Date:  2020.04.07 | Price: 1.99
+Difference: 1.43 | Percent Change: 52.87%
+Current Price: 3.42 | Diff From High: 0.00 | Diff From Low: 1.43
+-------------- HLS - Health Care --------------
+
+
+-------------- HUB - Financials --------------
+High Date: 2020.09.03 | Price: 17.6
+Low Date:  2020.03.16 | Price: 6.4
+Difference: 11.20 | Percent Change: 93.33%
+Current Price: 17.60 | Diff From High: 0.00 | Diff From Low: 11.20
+-------------- HUB - Financials --------------
+
+
+-------------- IEL - Consumer Discretionary --------------
+High Date: 2020.02.21 | Price: 24.392908
+Low Date:  2020.03.24 | Price: 10.89
+Difference: 13.50 | Percent Change: 76.54%
+Current Price: 19.73 | Diff From High: -4.66 | Diff From Low: 8.84
+-------------- IEL - Consumer Discretionary --------------
+
+
+-------------- IGO - Materials --------------
+High Date: 2020.01.08 | Price: 6.838885
+Low Date:  2020.03.19 | Price: 3.4
+Difference: 3.44 | Percent Change: 67.17%
+Current Price: 4.55 | Diff From High: -2.29 | Diff From Low: 1.15
+-------------- IGO - Materials --------------
+
+
+-------------- ILU - Materials --------------
+High Date: 2020.08.27 | Price: 10.35
+Low Date:  2020.03.23 | Price: 6.2
+Difference: 4.15 | Percent Change: 50.15%
+Current Price: 10.09 | Diff From High: -0.26 | Diff From Low: 3.89
+-------------- ILU - Materials --------------
+
+
+-------------- IPL - Materials --------------
+High Date: 2020.01.24 | Price: 3.4
+Low Date:  2020.03.23 | Price: 1.67
+Difference: 1.73 | Percent Change: 68.24%
+Current Price: 2.12 | Diff From High: -1.28 | Diff From Low: 0.45
+-------------- IPL - Materials --------------
+
+
+-------------- INA - Real Estate --------------
+High Date: 2020.02.21 | Price: 5.130773
+Low Date:  2020.03.23 | Price: 2.743676
+Difference: 2.39 | Percent Change: 60.63%
+Current Price: 4.62 | Diff From High: -0.51 | Diff From Low: 1.88
+-------------- INA - Real Estate --------------
+
+
+-------------- ING - Consumer Staples --------------
+High Date: 2020.02.11 | Price: 3.678066
+Low Date:  2020.05.14 | Price: 3.04
+Difference: 0.64 | Percent Change: 19.00%
+Current Price: 3.29 | Diff From High: -0.39 | Diff From Low: 0.25
+-------------- ING - Consumer Staples --------------
+
+
+-------------- IAG - Financials --------------
+High Date: 2020.01.17 | Price: 7.793333
+Low Date:  2020.08.31 | Price: 4.77
+Difference: 3.02 | Percent Change: 48.13%
+Current Price: 4.92 | Diff From High: -2.87 | Diff From Low: 0.15
+-------------- IAG - Financials --------------
+
+
+-------------- IVC - Consumer Discretionary --------------
+High Date: 2020.02.27 | Price: 14.595369
+Low Date:  2020.08.05 | Price: 9.498302
+Difference: 5.10 | Percent Change: 42.31%
+Current Price: 9.82 | Diff From High: -4.78 | Diff From Low: 0.32
+-------------- IVC - Consumer Discretionary --------------
+
+
+-------------- IFL - Financials --------------
+High Date: 2020.01.22 | Price: 8.106074
+Low Date:  2020.03.24 | Price: 2.79
+Difference: 5.32 | Percent Change: 97.58%
+Current Price: 3.62 | Diff From High: -4.49 | Diff From Low: 0.83
+-------------- IFL - Financials --------------
+
+
+-------------- IPH - Industrials --------------
+High Date: 2020.02.14 | Price: 9.884778
+Low Date:  2020.03.23 | Price: 6.156053
+Difference: 3.73 | Percent Change: 46.49%
+Current Price: 6.88 | Diff From High: -3.00 | Diff From Low: 0.72
+-------------- IPH - Industrials --------------
+
+
+-------------- IRE - Information Technology --------------
+High Date: 2020.02.11 | Price: 13.579846
+Low Date:  2020.03.23 | Price: 8.627774
+Difference: 4.95 | Percent Change: 44.60%
+Current Price: 10.68 | Diff From High: -2.90 | Diff From Low: 2.05
+-------------- IRE - Information Technology --------------
+
+
+-------------- JHX - Materials --------------
+High Date: 2020.08.11 | Price: 32.220001
+Low Date:  2020.03.19 | Price: 15.45
+Difference: 16.77 | Percent Change: 70.36%
+Current Price: 31.30 | Diff From High: -0.92 | Diff From Low: 15.85
+-------------- JHX - Materials --------------
+
+
+-------------- JHG - Financials --------------
+High Date: 2020.02.06 | Price: 38.330109
+Low Date:  2020.03.24 | Price: 20.013914
+Difference: 18.32 | Percent Change: 62.79%
+Current Price: 28.95 | Diff From High: -9.38 | Diff From Low: 8.94
+-------------- JHG - Financials --------------
+
+
+-------------- JBH - Consumer Discretionary --------------
+High Date: 2020.08.27 | Price: 51.759998
+Low Date:  2020.03.25 | Price: 23.095369
+Difference: 28.66 | Percent Change: 76.59%
+Current Price: 50.83 | Diff From High: -0.93 | Diff From Low: 27.73
+-------------- JBH - Consumer Discretionary --------------
+
+
+-------------- JIN - Consumer Discretionary --------------
+High Date: 2020.01.17 | Price: 16.037832
+Low Date:  2020.03.16 | Price: 7
+Difference: 9.04 | Percent Change: 78.46%
+Current Price: 14.30 | Diff From High: -1.74 | Diff From Low: 7.30
+-------------- JIN - Consumer Discretionary --------------
+
+
+-------------- LLC - Real Estate --------------
+High Date: 2020.02.21 | Price: 18.908924
+Low Date:  2020.03.27 | Price: 9.502269
+Difference: 9.41 | Percent Change: 66.22%
+Current Price: 12.50 | Diff From High: -6.41 | Diff From Low: 3.00
+-------------- LLC - Real Estate --------------
+
+
+-------------- A2M - Consumer Staples --------------
+High Date: 2020.07.30 | Price: 19.940001
+Low Date:  2020.01.15 | Price: 13.98
+Difference: 5.96 | Percent Change: 35.14%
+Current Price: 17.15 | Diff From High: -2.79 | Diff From Low: 3.17
+-------------- A2M - Consumer Staples --------------
+
+
+-------------- LNK - Information Technology --------------
+High Date: 2020.01.31 | Price: 6.657809
+Low Date:  2020.03.23 | Price: 2.676838
+Difference: 3.98 | Percent Change: 85.29%
+Current Price: 4.14 | Diff From High: -2.52 | Diff From Low: 1.46
+-------------- LNK - Information Technology --------------
+
+
+-------------- LYC - Materials --------------
+High Date: 2020.08.18 | Price: 2.57437
+Low Date:  2020.03.18 | Price: 1.08
+Difference: 1.49 | Percent Change: 81.79%
+Current Price: 2.42 | Diff From High: -0.15 | Diff From Low: 1.34
+-------------- LYC - Materials --------------
+
+
+-------------- MFG - Financials --------------
+High Date: 2020.02.14 | Price: 71.369278
+Low Date:  2020.03.23 | Price: 30.176025
+Difference: 41.19 | Percent Change: 81.13%
+Current Price: 62.50 | Diff From High: -8.87 | Diff From Low: 32.32
+-------------- MFG - Financials --------------
+
+
+-------------- MGR - Real Estate --------------
+High Date: 2020.02.04 | Price: 3.463407
+Low Date:  2020.03.19 | Price: 1.682367
+Difference: 1.78 | Percent Change: 69.22%
+Current Price: 2.18 | Diff From High: -1.28 | Diff From Low: 0.50
+-------------- MGR - Real Estate --------------
+
+
+-------------- MIN - Materials --------------
+High Date: 2020.08.27 | Price: 29.76
+Low Date:  2020.03.23 | Price: 12.280298
+Difference: 17.48 | Percent Change: 83.16%
+Current Price: 29.74 | Diff From High: -0.02 | Diff From Low: 17.46
+-------------- MIN - Materials --------------
+
+
+-------------- MMS - Industrials --------------
+High Date: 2020.01.17 | Price: 12.838662
+Low Date:  2020.03.19 | Price: 5.26
+Difference: 7.58 | Percent Change: 83.75%
+Current Price: 9.27 | Diff From High: -3.57 | Diff From Low: 4.01
+-------------- MMS - Industrials --------------
+
+
+-------------- MND - Industrials --------------
+High Date: 2020.01.24 | Price: 17.702023
+Low Date:  2020.08.05 | Price: 7.94
+Difference: 9.76 | Percent Change: 76.14%
+Current Price: 11.14 | Diff From High: -6.56 | Diff From Low: 3.20
+-------------- MND - Industrials --------------
+
+
+-------------- MPL - Financials --------------
+High Date: 2020.01.16 | Price: 3.167277
+Low Date:  2020.04.21 | Price: 2.500706
+Difference: 0.67 | Percent Change: 23.52%
+Current Price: 2.64 | Diff From High: -0.53 | Diff From Low: 0.14
+-------------- MPL - Financials --------------
+
+
+-------------- MQG - Financials --------------
+High Date: 2020.02.20 | Price: 149.170212
+Low Date:  2020.03.23 | Price: 70.786308
+Difference: 78.38 | Percent Change: 71.27%
+Current Price: 130.20 | Diff From High: -18.97 | Diff From Low: 59.41
+-------------- MQG - Financials --------------
+
+
+-------------- MTS - Consumer Staples --------------
+High Date: 2020.03.25 | Price: 3.232328
+Low Date:  2020.05.11 | Price: 2.236264
+Difference: 1.00 | Percent Change: 36.43%
+Current Price: 2.98 | Diff From High: -0.25 | Diff From Low: 0.74
+-------------- MTS - Consumer Staples --------------
+
+
+-------------- MYX - Health Care --------------
+High Date: 2020.01.20 | Price: 0.485
+Low Date:  2020.03.19 | Price: 0.195
+Difference: 0.29 | Percent Change: 85.29%
+Current Price: 0.35 | Diff From High: -0.14 | Diff From Low: 0.15
+-------------- MYX - Health Care --------------
+
+
+-------------- NAB - Financials --------------
+High Date: 2020.02.21 | Price: 26.925154
+Low Date:  2020.03.23 | Price: 13.634481
+Difference: 13.29 | Percent Change: 65.54%
+Current Price: 17.89 | Diff From High: -9.04 | Diff From Low: 4.26
+-------------- NAB - Financials --------------
+
+
+-------------- NAN - Health Care --------------
+High Date: 2020.02.14 | Price: 7.67
+Low Date:  2020.03.23 | Price: 4.37
+Difference: 3.30 | Percent Change: 54.82%
+Current Price: 6.19 | Diff From High: -1.48 | Diff From Low: 1.82
+-------------- NAN - Health Care --------------
+
+
+-------------- NCM - Materials --------------
+High Date: 2020.08.06 | Price: 36.530331
+Low Date:  2020.03.16 | Price: 21.550911
+Difference: 14.98 | Percent Change: 51.58%
+Current Price: 31.30 | Diff From High: -5.23 | Diff From Low: 9.75
+-------------- NCM - Materials --------------
+
+
+-------------- NEA - Information Technology --------------
+High Date: 2020.08.25 | Price: 3.17
+Low Date:  2020.03.25 | Price: 0.86
+Difference: 2.31 | Percent Change: 114.64%
+Current Price: 3.08 | Diff From High: -0.09 | Diff From Low: 2.22
+-------------- NEA - Information Technology --------------
+
+
+-------------- NEC - Communication Services --------------
+High Date: 2020.01.22 | Price: 1.936102
+Low Date:  2020.03.23 | Price: 0.84
+Difference: 1.10 | Percent Change: 78.97%
+Current Price: 1.67 | Diff From High: -0.27 | Diff From Low: 0.83
+-------------- NEC - Communication Services --------------
+
+
+-------------- NHC - Energy --------------
+High Date: 2020.01.14 | Price: 2.041481
+Low Date:  2020.03.23 | Price: 0.982222
+Difference: 1.06 | Percent Change: 70.06%
+Current Price: 1.14 | Diff From High: -0.91 | Diff From Low: 0.15
+-------------- NHC - Energy --------------
+
+
+-------------- NHF - Financials --------------
+High Date: 2020.01.17 | Price: 6.336708
+Low Date:  2020.03.12 | Price: 3.548458
+Difference: 2.79 | Percent Change: 56.41%
+Current Price: 4.50 | Diff From High: -1.84 | Diff From Low: 0.95
+-------------- NHF - Financials --------------
+
+
+-------------- NSR - Real Estate --------------
+High Date: 2020.02.20 | Price: 2.376466
+Low Date:  2020.03.19 | Price: 1.202963
+Difference: 1.17 | Percent Change: 65.57%
+Current Price: 1.91 | Diff From High: -0.47 | Diff From Low: 0.71
+-------------- NSR - Real Estate --------------
+
+
+-------------- NST - Materials --------------
+High Date: 2020.08.05 | Price: 16.43
+Low Date:  2020.03.16 | Price: 9.19
+Difference: 7.24 | Percent Change: 56.52%
+Current Price: 13.52 | Diff From High: -2.91 | Diff From Low: 4.33
+-------------- NST - Materials --------------
+
+
+-------------- NUF - Materials --------------
+High Date: 2020.01.15 | Price: 6.2
+Low Date:  2020.09.01 | Price: 3.92
+Difference: 2.28 | Percent Change: 45.06%
+Current Price: 3.96 | Diff From High: -2.24 | Diff From Low: 0.04
+-------------- NUF - Materials --------------
+
+
+-------------- NWH - Industrials --------------
+High Date: 2020.01.22 | Price: 3.33609
+Low Date:  2020.03.19 | Price: 1.074417
+Difference: 2.26 | Percent Change: 102.56%
+Current Price: 2.15 | Diff From High: -1.19 | Diff From Low: 1.08
+-------------- NWH - Industrials --------------
+
+
+-------------- NWL - Financials --------------
+High Date: 2020.09.03 | Price: 14.92
+Low Date:  2020.03.16 | Price: 5.270493
+Difference: 9.65 | Percent Change: 95.58%
+Current Price: 14.92 | Diff From High: 0.00 | Diff From Low: 9.65
+-------------- NWL - Financials --------------
+
+
+-------------- NWS - Communication Services --------------
+High Date: 2020.02.20 | Price: 22.480457
+Low Date:  2020.04.03 | Price: 13.3
+Difference: 9.18 | Percent Change: 51.32%
+Current Price: 20.72 | Diff From High: -1.76 | Diff From Low: 7.42
+-------------- NWS - Communication Services --------------
+
+
+-------------- NXT - Information Technology --------------
+High Date: 2020.08.31 | Price: 12.2
+Low Date:  2020.01.10 | Price: 6.52
+Difference: 5.68 | Percent Change: 60.68%
+Current Price: 11.95 | Diff From High: -0.25 | Diff From Low: 5.43
+-------------- NXT - Information Technology --------------
+
+
+-------------- OML - Communication Services --------------
+High Date: 2020.01.15 | Price: 3.741599
+Low Date:  2020.03.30 | Price: 0.585
+Difference: 3.16 | Percent Change: 145.92%
+Current Price: 1.05 | Diff From High: -2.69 | Diff From Low: 0.47
+-------------- OML - Communication Services --------------
+
+
+-------------- ORA - Materials --------------
+High Date: 2020.06.19 | Price: 2.8875
+Low Date:  2020.03.16 | Price: 1.899183
+Difference: 0.99 | Percent Change: 41.29%
+Current Price: 2.38 | Diff From High: -0.51 | Diff From Low: 0.48
+-------------- ORA - Materials --------------
+
+
+-------------- ORE - Materials --------------
+High Date: 2020.01.14 | Price: 3.79
+Low Date:  2020.05.14 | Price: 1.835
+Difference: 1.96 | Percent Change: 69.51%
+Current Price: 2.83 | Diff From High: -0.96 | Diff From Low: 1.00
+-------------- ORE - Materials --------------
+
+
+-------------- ORG - Energy --------------
+High Date: 2020.01.16 | Price: 8.571748
+Low Date:  2020.03.23 | Price: 3.8
+Difference: 4.77 | Percent Change: 77.14%
+Current Price: 5.56 | Diff From High: -3.01 | Diff From Low: 1.76
+-------------- ORG - Energy --------------
+
+
+-------------- ORI - Materials --------------
+High Date: 2020.01.22 | Price: 23.153854
+Low Date:  2020.03.23 | Price: 14.167742
+Difference: 8.99 | Percent Change: 48.16%
+Current Price: 17.57 | Diff From High: -5.58 | Diff From Low: 3.40
+-------------- ORI - Materials --------------
+
+
+-------------- OSH - Energy --------------
+High Date: 2020.01.15 | Price: 7.84509
+Low Date:  2020.03.23 | Price: 1.88
+Difference: 5.97 | Percent Change: 122.67%
+Current Price: 3.22 | Diff From High: -4.63 | Diff From Low: 1.34
+-------------- OSH - Energy --------------
+
+
+-------------- OZL - Materials --------------
+High Date: 2020.09.03 | Price: 15
+Low Date:  2020.03.23 | Price: 5.99
+Difference: 9.01 | Percent Change: 85.85%
+Current Price: 15.00 | Diff From High: 0.00 | Diff From Low: 9.01
+-------------- OZL - Materials --------------
+
+
+-------------- PDL - Financials --------------
+High Date: 2020.02.07 | Price: 9.060095
+Low Date:  2020.03.19 | Price: 3.358484
+Difference: 5.70 | Percent Change: 91.82%
+Current Price: 5.70 | Diff From High: -3.36 | Diff From Low: 2.34
+-------------- PDL - Financials --------------
+
+
+-------------- PLS - Materials --------------
+High Date: 2020.08.06 | Price: 0.415
+Low Date:  2020.03.23 | Price: 0.14
+Difference: 0.27 | Percent Change: 99.10%
+Current Price: 0.36 | Diff From High: -0.05 | Diff From Low: 0.22
+-------------- PLS - Materials --------------
+
+
+-------------- PME - Health Care --------------
+High Date: 2020.05.26 | Price: 29.68
+Low Date:  2020.03.19 | Price: 14.86
+Difference: 14.82 | Percent Change: 66.55%
+Current Price: 27.10 | Diff From High: -2.58 | Diff From Low: 12.24
+-------------- PME - Health Care --------------
+
+
+-------------- PMV - Consumer Discretionary --------------
+High Date: 2020.02.14 | Price: 20.883801
+Low Date:  2020.03.23 | Price: 8.771
+Difference: 12.11 | Percent Change: 81.69%
+Current Price: 19.35 | Diff From High: -1.53 | Diff From Low: 10.58
+-------------- PMV - Consumer Discretionary --------------
+
+
+-------------- PNI - Financials --------------
+High Date: 2020.02.20 | Price: 6.431502
+Low Date:  2020.03.25 | Price: 2.471209
+Difference: 3.96 | Percent Change: 88.97%
+Current Price: 5.40 | Diff From High: -1.03 | Diff From Low: 2.93
+-------------- PNI - Financials --------------
+
+
+-------------- PNV - Health Care --------------
+High Date: 2020.02.19 | Price: 3.15
+Low Date:  2020.03.23 | Price: 1.32
+Difference: 1.83 | Percent Change: 81.88%
+Current Price: 2.29 | Diff From High: -0.86 | Diff From Low: 0.97
+-------------- PNV - Health Care --------------
+
+
+-------------- PPT - Financials --------------
+High Date: 2020.02.20 | Price: 45.246532
+Low Date:  2020.03.24 | Price: 19.941263
+Difference: 25.31 | Percent Change: 77.64%
+Current Price: 30.82 | Diff From High: -14.43 | Diff From Low: 10.88
+-------------- PPT - Financials --------------
+
+
+-------------- PRN - Materials --------------
+High Date: 2020.01.09 | Price: 1.619431
+Low Date:  2020.03.24 | Price: 0.48
+Difference: 1.14 | Percent Change: 108.55%
+Current Price: 1.22 | Diff From High: -0.40 | Diff From Low: 0.74
+-------------- PRN - Materials --------------
+
+
+-------------- PTM - Financials --------------
+High Date: 2020.01.15 | Price: 4.631027
+Low Date:  2020.03.23 | Price: 2.82372
+Difference: 1.81 | Percent Change: 48.49%
+Current Price: 3.63 | Diff From High: -1.00 | Diff From Low: 0.81
+-------------- PTM - Financials --------------
+
+
+-------------- QAN - Industrials --------------
+High Date: 2020.01.03 | Price: 7.014476
+Low Date:  2020.03.19 | Price: 2.14
+Difference: 4.87 | Percent Change: 106.49%
+Current Price: 3.96 | Diff From High: -3.05 | Diff From Low: 1.82
+-------------- QAN - Industrials --------------
+
+
+-------------- QBE - Financials --------------
+High Date: 2020.02.21 | Price: 14.759781
+Low Date:  2020.03.23 | Price: 7.292939
+Difference: 7.47 | Percent Change: 67.72%
+Current Price: 10.10 | Diff From High: -4.66 | Diff From Low: 2.81
+-------------- QBE - Financials --------------
+
+
+-------------- QUB - Industrials --------------
+High Date: 2020.01.22 | Price: 3.572403
+Low Date:  2020.03.23 | Price: 1.815
+Difference: 1.76 | Percent Change: 65.24%
+Current Price: 2.79 | Diff From High: -0.78 | Diff From Low: 0.98
+-------------- QUB - Industrials --------------
+
+
+-------------- REA - Communication Services --------------
+High Date: 2020.08.27 | Price: 119.629997
+Low Date:  2020.03.23 | Price: 64.719002
+Difference: 54.91 | Percent Change: 59.57%
+Current Price: 118.19 | Diff From High: -1.44 | Diff From Low: 53.47
+-------------- REA - Communication Services --------------
+
+
+-------------- RHC - Health Care --------------
+High Date: 2020.02.11 | Price: 79.364044
+Low Date:  2020.03.25 | Price: 50.52
+Difference: 28.84 | Percent Change: 44.42%
+Current Price: 66.23 | Diff From High: -13.13 | Diff From Low: 15.71
+-------------- RHC - Health Care --------------
+
+
+-------------- RIO - Materials --------------
+High Date: 2020.08.06 | Price: 105.5
+Low Date:  2020.03.12 | Price: 75.788811
+Difference: 29.71 | Percent Change: 32.78%
+Current Price: 98.31 | Diff From High: -7.19 | Diff From Low: 22.52
+-------------- RIO - Materials --------------
+
+
+-------------- RMD - Health Care --------------
+High Date: 2020.07.21 | Price: 29.22534
+Low Date:  2020.03.23 | Price: 20.009424
+Difference: 9.22 | Percent Change: 37.44%
+Current Price: 25.45 | Diff From High: -3.78 | Diff From Low: 5.44
+-------------- RMD - Health Care --------------
+
+
+-------------- RRL - Materials --------------
+High Date: 2020.07.28 | Price: 5.98
+Low Date:  2020.03.16 | Price: 2.91
+Difference: 3.07 | Percent Change: 69.07%
+Current Price: 5.24 | Diff From High: -0.74 | Diff From Low: 2.33
+-------------- RRL - Materials --------------
+
+
+-------------- RSG - Materials --------------
+High Date: 2020.07.27 | Price: 1.44
+Low Date:  2020.03.16 | Price: 0.62
+Difference: 0.82 | Percent Change: 79.61%
+Current Price: 1.12 | Diff From High: -0.32 | Diff From Low: 0.50
+-------------- RSG - Materials --------------
+
+
+-------------- RWC - Industrials --------------
+High Date: 2020.02.07 | Price: 4.685883
+Low Date:  2020.03.23 | Price: 1.72
+Difference: 2.97 | Percent Change: 92.60%
+Current Price: 3.92 | Diff From High: -0.77 | Diff From Low: 2.20
+-------------- RWC - Industrials --------------
+
+
+-------------- S32 - Materials --------------
+High Date: 2020.01.20 | Price: 2.898659
+Low Date:  2020.03.23 | Price: 1.665
+Difference: 1.23 | Percent Change: 54.06%
+Current Price: 2.24 | Diff From High: -0.66 | Diff From Low: 0.58
+-------------- S32 - Materials --------------
+
+
+-------------- SAR - Materials --------------
+High Date: 2020.07.27 | Price: 6.48
+Low Date:  2020.03.16 | Price: 2.91
+Difference: 3.57 | Percent Change: 76.04%
+Current Price: 5.20 | Diff From High: -1.28 | Diff From Low: 2.29
+-------------- SAR - Materials --------------
+
+
+-------------- SBM - Materials --------------
+High Date: 2020.07.27 | Price: 3.83
+Low Date:  2020.03.16 | Price: 1.665
+Difference: 2.17 | Percent Change: 78.80%
+Current Price: 3.44 | Diff From High: -0.39 | Diff From Low: 1.77
+-------------- SBM - Materials --------------
+
+
+-------------- SCG - Real Estate --------------
+High Date: 2020.01.16 | Price: 3.922944
+Low Date:  2020.03.24 | Price: 1.43
+Difference: 2.49 | Percent Change: 93.14%
+Current Price: 2.27 | Diff From High: -1.65 | Diff From Low: 0.84
+-------------- SCG - Real Estate --------------
+
+
+-------------- SCP - Real Estate --------------
+High Date: 2020.02.19 | Price: 3.100176
+Low Date:  2020.03.19 | Price: 2.004846
+Difference: 1.10 | Percent Change: 42.91%
+Current Price: 2.24 | Diff From High: -0.86 | Diff From Low: 0.24
+-------------- SCP - Real Estate --------------
+
+
+-------------- SDF - Financials --------------
+High Date: 2020.02.20 | Price: 3.924605
+Low Date:  2020.04.07 | Price: 2.291059
+Difference: 1.63 | Percent Change: 52.56%
+Current Price: 3.44 | Diff From High: -0.48 | Diff From Low: 1.15
+-------------- SDF - Financials --------------
+
+
+-------------- SEK - Communication Services --------------
+High Date: 2020.01.24 | Price: 23.752041
+Low Date:  2020.03.23 | Price: 11.821611
+Difference: 11.93 | Percent Change: 67.07%
+Current Price: 20.95 | Diff From High: -2.80 | Diff From Low: 9.13
+-------------- SEK - Communication Services --------------
+
+
+-------------- SFR - Materials --------------
+High Date: 2020.01.20 | Price: 6.1853
+Low Date:  2020.03.23 | Price: 2.8
+Difference: 3.39 | Percent Change: 75.35%
+Current Price: 4.82 | Diff From High: -1.37 | Diff From Low: 2.02
+-------------- SFR - Materials --------------
+
+
+-------------- SGM - Materials --------------
+High Date: 2020.01.22 | Price: 11.722708
+Low Date:  2020.03.24 | Price: 5.74
+Difference: 5.98 | Percent Change: 68.52%
+Current Price: 8.11 | Diff From High: -3.61 | Diff From Low: 2.37
+-------------- SGM - Materials --------------
+
+
+-------------- SGP - Real Estate --------------
+High Date: 2020.02.20 | Price: 5.258163
+Low Date:  2020.03.23 | Price: 1.741403
+Difference: 3.52 | Percent Change: 100.49%
+Current Price: 3.85 | Diff From High: -1.41 | Diff From Low: 2.11
+-------------- SGP - Real Estate --------------
+
+
+-------------- SGR - Consumer Discretionary --------------
+High Date: 2020.01.16 | Price: 4.597326
+Low Date:  2020.03.24 | Price: 1.615
+Difference: 2.98 | Percent Change: 96.01%
+Current Price: 3.04 | Diff From High: -1.56 | Diff From Low: 1.43
+-------------- SGR - Consumer Discretionary --------------
+
+
+-------------- SHL - Health Care --------------
+High Date: 2020.08.20 | Price: 35.060001
+Low Date:  2020.03.20 | Price: 21.67
+Difference: 13.39 | Percent Change: 47.21%
+Current Price: 33.00 | Diff From High: -2.06 | Diff From Low: 11.33
+-------------- SHL - Health Care --------------
+
+
+-------------- SIQ - Industrials --------------
+High Date: 2020.02.20 | Price: 6.926968
+Low Date:  2020.03.23 | Price: 4.051256
+Difference: 2.88 | Percent Change: 52.39%
+Current Price: 5.91 | Diff From High: -1.02 | Diff From Low: 1.86
+-------------- SIQ - Industrials --------------
+
+
+-------------- SKC - Consumer Discretionary --------------
+High Date: 2020.01.17 | Price: 3.853464
+Low Date:  2020.03.23 | Price: 1.23
+Difference: 2.62 | Percent Change: 103.22%
+Current Price: 2.48 | Diff From High: -1.37 | Diff From Low: 1.25
+-------------- SKC - Consumer Discretionary --------------
+
+
+-------------- SKI - Utilities --------------
+High Date: 2020.07.21 | Price: 2.259394
+Low Date:  2020.03.16 | Price: 1.667879
+Difference: 0.59 | Percent Change: 30.12%
+Current Price: 2.17 | Diff From High: -0.09 | Diff From Low: 0.50
+-------------- SKI - Utilities --------------
+
+
+-------------- SLR - Materials --------------
+High Date: 2020.07.27 | Price: 2.66
+Low Date:  2020.03.16 | Price: 1.045
+Difference: 1.62 | Percent Change: 87.18%
+Current Price: 2.25 | Diff From High: -0.41 | Diff From Low: 1.21
+-------------- SLR - Materials --------------
+
+
+-------------- SOL - Energy --------------
+High Date: 2020.02.20 | Price: 22.743784
+Low Date:  2020.04.03 | Price: 16.621595
+Difference: 6.12 | Percent Change: 31.10%
+Current Price: 21.31 | Diff From High: -1.43 | Diff From Low: 4.69
+-------------- SOL - Energy --------------
+
+
+-------------- SPK - Telecommunication Services --------------
+High Date: 2020.08.04 | Price: 4.61
+Low Date:  2020.03.20 | Price: 3.61
+Difference: 1.00 | Percent Change: 24.33%
+Current Price: 4.50 | Diff From High: -0.11 | Diff From Low: 0.89
+-------------- SPK - Telecommunication Services --------------
+
+
+-------------- SSM - Industrials --------------
+High Date: 2020.01.15 | Price: 2.765769
+Low Date:  2020.03.16 | Price: 1.615
+Difference: 1.15 | Percent Change: 52.54%
+Current Price: 1.92 | Diff From High: -0.85 | Diff From Low: 0.30
+-------------- SSM - Industrials --------------
+
+
+-------------- STO - Energy --------------
+High Date: 2020.01.15 | Price: 8.865519
+Low Date:  2020.03.19 | Price: 2.735942
+Difference: 6.13 | Percent Change: 105.67%
+Current Price: 5.46 | Diff From High: -3.41 | Diff From Low: 2.72
+-------------- STO - Energy --------------
+
+
+-------------- SUL - Consumer Discretionary --------------
+High Date: 2020.09.03 | Price: 11.13
+Low Date:  2020.03.19 | Price: 3.514757
+Difference: 7.62 | Percent Change: 104.00%
+Current Price: 11.13 | Diff From High: 0.00 | Diff From Low: 7.62
+-------------- SUL - Consumer Discretionary --------------
+
+
+-------------- SUN - Financials --------------
+High Date: 2020.01.16 | Price: 13.121579
+Low Date:  2020.03.19 | Price: 7.600249
+Difference: 5.52 | Percent Change: 53.29%
+Current Price: 9.40 | Diff From High: -3.72 | Diff From Low: 1.80
+-------------- SUN - Financials --------------
+
+
+-------------- SVW - Industrials --------------
+High Date: 2020.01.22 | Price: 21.44383
+Low Date:  2020.03.23 | Price: 9.288085
+Difference: 12.16 | Percent Change: 79.11%
+Current Price: 18.65 | Diff From High: -2.79 | Diff From Low: 9.36
+-------------- SVW - Industrials --------------
+
+
+-------------- SXL - Communication Services --------------
+High Date: 2020.01.15 | Price: 0.918036
+Low Date:  2020.04.22 | Price: 0.11
+Difference: 0.81 | Percent Change: 157.20%
+Current Price: 0.17 | Diff From High: -0.75 | Diff From Low: 0.06
+-------------- SXL - Communication Services --------------
+
+
+-------------- SYD - Industrials --------------
+High Date: 2020.01.17 | Price: 9.04
+Low Date:  2020.03.19 | Price: 4.7
+Difference: 4.34 | Percent Change: 63.17%
+Current Price: 5.85 | Diff From High: -3.19 | Diff From Low: 1.15
+-------------- SYD - Industrials --------------
+
+
+-------------- TAH - Consumer Discretionary --------------
+High Date: 2020.01.24 | Price: 4.624701
+Low Date:  2020.03.23 | Price: 2.18
+Difference: 2.44 | Percent Change: 71.85%
+Current Price: 3.63 | Diff From High: -0.99 | Diff From Low: 1.45
+-------------- TAH - Consumer Discretionary --------------
+
+
+-------------- TCL - Industrials --------------
+High Date: 2020.02.14 | Price: 16.189241
+Low Date:  2020.03.19 | Price: 9.929137
+Difference: 6.26 | Percent Change: 47.94%
+Current Price: 14.31 | Diff From High: -1.88 | Diff From Low: 4.38
+-------------- TCL - Industrials --------------
+
+
+-------------- TGR - Consumer Staples --------------
+High Date: 2020.02.12 | Price: 4.488684
+Low Date:  2020.03.23 | Price: 2.9
+Difference: 1.59 | Percent Change: 43.00%
+Current Price: 3.71 | Diff From High: -0.78 | Diff From Low: 0.81
+-------------- TGR - Consumer Staples --------------
+
+
+-------------- TLS - Telecommunication Services --------------
+High Date: 2020.01.23 | Price: 3.829583
+Low Date:  2020.09.01 | Price: 2.83
+Difference: 1.00 | Percent Change: 30.02%
+Current Price: 2.90 | Diff From High: -0.93 | Diff From Low: 0.07
+-------------- TLS - Telecommunication Services --------------
+
+
+-------------- TNE - Information Technology --------------
+High Date: 2020.05.12 | Price: 10.150712
+Low Date:  2020.03.12 | Price: 6.714014
+Difference: 3.44 | Percent Change: 40.76%
+Current Price: 7.76 | Diff From High: -2.39 | Diff From Low: 1.05
+-------------- TNE - Information Technology --------------
+
+
+-------------- TPM - Telecommunication Services --------------
+High Date: 2020.06.30 | Price: 8.9
+Low Date:  2020.03.23 | Price: 6.02329
+Difference: 2.88 | Percent Change: 38.55%
+Current Price: 8.20 | Diff From High: -0.70 | Diff From Low: 2.18
+-------------- TPM - Telecommunication Services --------------
+
+
+-------------- TWE - Consumer Staples --------------
+High Date: 2020.01.24 | Price: 17.230841
+Low Date:  2020.03.16 | Price: 8.535293
+Difference: 8.70 | Percent Change: 67.50%
+Current Price: 9.50 | Diff From High: -7.73 | Diff From Low: 0.96
+-------------- TWE - Consumer Staples --------------
+
+
+-------------- UMG - Consumer Staples --------------
+High Date: 2020.04.08 | Price: 5.1
+Low Date:  2020.09.01 | Price: 3.85
+Difference: 1.25 | Percent Change: 27.93%
+Current Price: 4.26 | Diff From High: -0.84 | Diff From Low: 0.41
+-------------- UMG - Consumer Staples --------------
+
+
+-------------- URW - Real Estate --------------
+High Date: 2020.01.03 | Price: 10.23479
+Low Date:  2020.08.19 | Price: 3.11
+Difference: 7.12 | Percent Change: 106.78%
+Current Price: 3.25 | Diff From High: -6.98 | Diff From Low: 0.14
+-------------- URW - Real Estate --------------
+
+
+-------------- VCX - Real Estate --------------
+High Date: 2020.01.16 | Price: 2.57
+Low Date:  2020.03.27 | Price: 0.965
+Difference: 1.60 | Percent Change: 90.81%
+Current Price: 1.44 | Diff From High: -1.13 | Diff From Low: 0.47
+-------------- VCX - Real Estate --------------
+
+
+-------------- VEA - Energy --------------
+High Date: 2020.01.09 | Price: 1.913378
+Low Date:  2020.03.23 | Price: 1.168475
+Difference: 0.74 | Percent Change: 48.34%
+Current Price: 1.65 | Diff From High: -0.27 | Diff From Low: 0.48
+-------------- VEA - Energy --------------
+
+
+-------------- VOC - Telecommunication Services --------------
+High Date: 2020.02.21 | Price: 3.68
+Low Date:  2020.03.23 | Price: 1.81
+Difference: 1.87 | Percent Change: 68.12%
+Current Price: 3.43 | Diff From High: -0.25 | Diff From Low: 1.62
+-------------- VOC - Telecommunication Services --------------
+
+
+-------------- VUK - Financials --------------
+High Date: 2020.02.13 | Price: 3.75
+Low Date:  2020.03.24 | Price: 1.07
+Difference: 2.68 | Percent Change: 111.20%
+Current Price: 1.61 | Diff From High: -2.14 | Diff From Low: 0.54
+-------------- VUK - Financials --------------
+
+
+-------------- WBC - Financials --------------
+High Date: 2020.02.21 | Price: 25.809999
+Low Date:  2020.03.23 | Price: 14.1
+Difference: 11.71 | Percent Change: 58.68%
+Current Price: 17.60 | Diff From High: -8.21 | Diff From Low: 3.50
+-------------- WBC - Financials --------------
+
+
+-------------- WEB - Consumer Discretionary --------------
+High Date: 2020.01.17 | Price: 14.189043
+Low Date:  2020.04.22 | Price: 2.26
+Difference: 11.93 | Percent Change: 145.04%
+Current Price: 3.72 | Diff From High: -10.47 | Diff From Low: 1.46
+-------------- WEB - Consumer Discretionary --------------
+
+
+-------------- WES - Consumer Discretionary --------------
+High Date: 2020.08.27 | Price: 49.34
+Low Date:  2020.03.23 | Price: 30.907064
+Difference: 18.43 | Percent Change: 45.94%
+Current Price: 48.55 | Diff From High: -0.79 | Diff From Low: 17.64
+-------------- WES - Consumer Discretionary --------------
+
+
+-------------- WHC - Energy --------------
+High Date: 2020.02.05 | Price: 2.650271
+Low Date:  2020.09.02 | Price: 0.86
+Difference: 1.79 | Percent Change: 102.00%
+Current Price: 0.86 | Diff From High: -1.79 | Diff From Low: 0.01
+-------------- WHC - Energy --------------
+
+
+-------------- WOR - Energy --------------
+High Date: 2020.01.15 | Price: 15.393336
+Low Date:  2020.03.23 | Price: 4.772661
+Difference: 10.62 | Percent Change: 105.33%
+Current Price: 9.84 | Diff From High: -5.55 | Diff From Low: 5.07
+-------------- WOR - Energy --------------
+
+
+-------------- WOW - Consumer Staples --------------
+High Date: 2020.02.20 | Price: 42.553658
+Low Date:  2020.05.22 | Price: 33.748745
+Difference: 8.80 | Percent Change: 23.08%
+Current Price: 39.57 | Diff From High: -2.98 | Diff From Low: 5.82
+-------------- WOW - Consumer Staples --------------
+
+
+-------------- WPL - Energy --------------
+High Date: 2020.01.08 | Price: 34.602806
+Low Date:  2020.03.23 | Price: 14.995995
+Difference: 19.61 | Percent Change: 79.06%
+Current Price: 19.25 | Diff From High: -15.35 | Diff From Low: 4.25
+-------------- WPL - Energy --------------
+
+
+-------------- WSA - Materials --------------
+High Date: 2020.01.03 | Price: 2.965742
+Low Date:  2020.03.23 | Price: 1.66
+Difference: 1.31 | Percent Change: 56.46%
+Current Price: 2.33 | Diff From High: -0.64 | Diff From Low: 0.67
+-------------- WSA - Materials --------------
+
+
+-------------- WTC - Information Technology --------------
+High Date: 2020.09.03 | Price: 29.674002
+Low Date:  2020.03.19 | Price: 10.474352
+Difference: 19.20 | Percent Change: 95.64%
+Current Price: 29.67 | Diff From High: 0.00 | Diff From Low: 19.20
+-------------- WTC - Information Technology --------------
+
+
+-------------- XRO - Information Technology --------------
+High Date: 2020.09.02 | Price: 103
+Low Date:  2020.03.23 | Price: 58.75
+Difference: 44.25 | Percent Change: 54.71%
+Current Price: 100.46 | Diff From High: -2.54 | Diff From Low: 41.71
+-------------- XRO - Information Technology --------------
+

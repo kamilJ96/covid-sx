@@ -1,0 +1,40 @@
+@import './theme';
+@import '../../node_modules/ag-grid-community/dist/styles/ag-grid.css';
+
+$row-even-background: #13121d;
+
+.asx-grid {
+  height: 100%;
+  .ag-header {
+    background: $header-background-colour;
+    font-weight: bold;
+  }
+
+  .ag-body-viewport {
+    background: $background-colour;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 131, 255, 0.26);
+      outline: 1px solid rgba(0, 95, 184, 0.316);
+    }
+
+    .ag-row {
+      &-even {
+        background-color: $row-even-background;
+      }
+
+      &-hover {
+          background-color: $backgronud-colour-opaque;
+      }
+    }
+
+    .ag-center-cols-container {
+        width: 100%!important;
+    }
+  }
+}

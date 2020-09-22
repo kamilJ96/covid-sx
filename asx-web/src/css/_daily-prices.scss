@@ -1,0 +1,25 @@
+@import './theme';
+
+.asx-daily-prices {
+    .ag-cell {
+        &.recovered {
+            color: $red-dark;
+            font-weight: bold;
+            &.red {
+                color: $red;
+            }
+
+            &.orange {
+                color: $orange;
+            }
+
+            &.yellow {
+                color: $yellow;
+            }
+
+            &.green {
+                color: $green;
+            }
+        }
+    }
+}
