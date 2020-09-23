@@ -9,19 +9,23 @@ import { RootState } from '../../redux/reducer';
 
 import '../../css/_daily-prices.scss';
 import { dateRenderer } from './Renderers';
-import { DeepReadonly } from 'utility-types';
 
-const fieldName = (header: keyof AsxSymbolStat | 'company'): string => header;
+const fieldName = (header: keyof AsxSymbolStat | 'company' | 'sector'): string => header;
 
 
 const columnDefs: ColDef[] = [
   {
     headerName: 'Symbol',
     field: fieldName('symbol'),
+    width: 75,
   },
   {
     headerName: 'Company',
     field: fieldName('company'),
+  },
+  {
+    headerName: 'Sector',
+    field: fieldName('sector'),
   },
   {
     headerName: 'Highest Price',
@@ -72,6 +76,7 @@ function DailyPrices(): ReactElement {
     grid.current?.api?.forEachNode((node) => {
       const data = node.data;
       data.company = priceData.symbols[node.data.symbol].company;
+      data.sector = priceData.symbols[node.data.symbol].sector;
       transaction.update?.push(data);
     });
 
