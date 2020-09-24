@@ -155,6 +155,11 @@ export const WebSocketProvider = ({ children }: Props): ReactElement => {
     ws.current.addEventListener('close', close);
     ws.current.addEventListener('error', error);
     ws.current.addEventListener('open', open);
+
+    return (() => {
+      if (ws.current?.readyState === WebSocket.CONNECTING || ws.current?.readyState === WebSocket.OPEN)
+        ws.current.close();
+    });
   }, []);
 
   return <WebSocketContext.Provider value={{ sendMessage }}>{children}</WebSocketContext.Provider>;

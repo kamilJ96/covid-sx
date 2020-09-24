@@ -8,6 +8,7 @@ import './css/_grid.scss';
 import { RootState } from './redux/reducer';
 import { WebSocketProvider } from './components/WebSocket/WebSocket';
 import DailyPricesCharts from './components/DailyPrices/DailyPricesCharts';
+import Loading from './components/Loading';
 
 function App(): ReactElement {
   const asxData = useSelector((state: RootState) => ({
@@ -18,21 +19,25 @@ function App(): ReactElement {
   return (
     <WebSocketProvider>
       <div className="asx-wrapper">
-        <header className="asx-header">
-          <span>Number Of Symbols: {Object.keys(asxData.symbols).length}</span>
-          <div className="asx-symbols">
-            {/* {Object.keys(asxData.symbols).map((x, i) => (
+        {asxData.prices.length && Object.keys(asxData.symbols).length ? <>
+          <header className="asx-header">
+            <span>Number Of Symbols: {Object.keys(asxData.symbols).length}</span>
+            <div className="asx-symbols">
+              {/* {Object.keys(asxData.symbols).map((x, i) => (
               <div key={x} className="symbol">
                 {x}: {asxData.symbols[x].company}
               </div>
             ))} */}
+            </div>
+            <span>Price Points: {asxData.prices.length} </span>
+          </header>
+          <div className="asx-body">
+            <DailyPricesCharts />
+            <DailyPrices />
           </div>
-          <span>Price Points: {asxData.prices.length} </span>
-        </header>
-        <div className="asx-body">
-          <DailyPricesCharts />
-          <DailyPrices />
-        </div>
+        </>
+          :
+          <Loading />}
       </div>
     </WebSocketProvider>
   );

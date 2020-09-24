@@ -1,4 +1,4 @@
-import React, { ReactElement, useEffect, useRef, useState } from 'react';
+import React, { ReactElement, useEffect, useMemo, useRef } from 'react';
 import { ColDef, RowDataTransaction } from 'ag-grid-community';
 import { AgGridReact } from 'ag-grid-react';
 import { AgGridReact as AgGridReactType } from 'ag-grid-react/lib/agGridReact';
@@ -82,7 +82,7 @@ function DailyPrices(): ReactElement {
 
     grid.current?.api?.applyTransaction(transaction);
 
-  }, [priceData.priceData]);
+  }, [priceData.priceData, priceData.symbols]);
 
   return (
     <div className="asx-daily-prices asx-grid">

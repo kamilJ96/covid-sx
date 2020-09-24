@@ -23,3 +23,32 @@
         }
     }
 }
+
+.asx-prices-charts {
+    width: 99%;
+    height: 99%;
+    position: relative;
+
+    .sector-filter {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+        .sector {
+            padding: 5px;
+            cursor: pointer;
+            animation: background-color 0.3s ease-in-out;
+            background-color: $background-colour-opaque;
+            &:hover {
+                background-color: $border-colour;
+            }
+
+            &.inactive {
+                opacity: 0.5;
+                color: grey!important;
+            }
+        }
+    }
+}
