@@ -9,6 +9,7 @@ import { RootState } from './redux/reducer';
 import { WebSocketProvider } from './components/WebSocket/WebSocket';
 import DailyPricesCharts from './components/DailyPrices/DailyPricesCharts';
 import Loading from './components/Loading';
+import SectorPricesChart from './components/SectorPrices/SectorPricesChart';
 
 function App(): ReactElement {
   const asxData = useSelector((state: RootState) => ({
@@ -32,7 +33,8 @@ function App(): ReactElement {
             <span>Price Points: {asxData.prices.length} </span>
           </header>
           <div className="asx-body">
-            <DailyPricesCharts />
+            {/* <DailyPricesCharts /> */}
+            <SectorPricesChart />
             <DailyPrices />
           </div>
         </>

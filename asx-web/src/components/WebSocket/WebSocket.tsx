@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useRef, useEffect, ReactElement } from 'react';
 import { useDispatch } from 'react-redux';
 import DataActions from '../../redux/reducers/DataReducer/DataActions';
-import { AsxPrice, AsxSymbol } from '../../types/dataTypes';
+import { AsxPrice, AsxSymbol, SectorType } from '../../types/dataTypes';
 
 import * as c from './constants';
 
@@ -76,7 +76,7 @@ export const WebSocketProvider = ({ children }: Props): ReactElement => {
           const s = symbolString.split(',');
           if (s.length === 4) {
             const [symbol, company, sector, marketCap] = s;
-            symbols[symbol] = { company, sector, marketCap: BigInt(marketCap) };
+            symbols[symbol] = { company, sector: sector as SectorType, marketCap: BigInt(marketCap) };
           }
         });
 

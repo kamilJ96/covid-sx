@@ -2,7 +2,7 @@ import React, { ReactElement, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { RootState } from '../../redux/reducer';
-import SectorFilter from './SectorFilter';
+import SectorFilter from '../SectorPrices/SectorFilter';
 
 const SECTOR_TO_COLOUR: Record<string, unknown> = {
   'Real Estate': '#960000',
