@@ -1,54 +1,73 @@
 @import './theme';
 
 .asx-daily-prices {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  width: 100%;
+
+  .asx-grid {
+    overflow: auto;
+    padding-left: 5px;
     .ag-cell {
-        &.recovered {
-            color: $red-dark;
-            font-weight: bold;
-            &.red {
-                color: $red;
-            }
-
-            &.orange {
-                color: $orange;
-            }
-
-            &.yellow {
-                color: $yellow;
-            }
-
-            &.green {
-                color: $green;
-            }
+      &.recovered {
+        color: $red-dark;
+        font-weight: bold;
+        &.red {
+          color: $red;
         }
+
+        &.orange {
+          color: $orange;
+        }
+
+        &.yellow {
+          color: $yellow;
+        }
+
+        &.green {
+          color: $green;
+        }
+      }
     }
+  }
+
+  .asx-chart {
+    display: grid;
+    margin-right: 10px;
+    margin: 0 5px;
+
+    .chart-title {
+      text-align: center;
+      font-size: 1.2em;
+    }
+  }
 }
 
 .asx-prices-charts {
-    width: 99%;
-    height: 99%;
-    position: relative;
+  width: 99%;
+  height: 99%;
+  position: relative;
 
-    .sector-filter {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        z-index: 2;
-        .sector {
-            padding: 5px;
-            cursor: pointer;
-            animation: background-color 0.3s ease-in-out;
-            background-color: $background-colour-opaque;
-            &:hover {
-                background-color: $border-colour;
-            }
+  .sector-filter {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    .sector {
+      padding: 5px;
+      cursor: pointer;
+      animation: background-color 0.3s ease-in-out;
+      background-color: $background-colour-opaque;
+      &:hover {
+        background-color: $border-colour;
+      }
 
-            &.inactive {
-                opacity: 0.5;
-                color: grey!important;
-            }
-        }
+      &.inactive {
+        opacity: 0.5;
+        color: grey !important;
+      }
     }
+  }
 }

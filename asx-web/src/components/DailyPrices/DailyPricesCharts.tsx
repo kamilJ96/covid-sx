@@ -1,28 +1,16 @@
 import React, { ReactElement, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Label, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { RootState } from '../../redux/reducer';
-import SectorFilter from '../SectorPrices/SectorFilter';
+import { SECTOR_TO_COLOUR } from '../../types/dataTypes';
 
-const SECTOR_TO_COLOUR: Record<string, unknown> = {
-  'Real Estate': '#960000',
-  'Materials': '#007109',
-  'Information Technology': '#1af4ff',
-  'Utilities': '#d8f10b',
-  'Industrials': '#f1a00b',
-  'Health Care': '#e00e0e',
-  'Consumer Discretionary': '#901190',
-  'Financials': '#02de13',
-  'Consumer Staples': '#123494',
-  'Telecommunication Services': '#8c9412',
-  'Communication Services': '#ff00bc',
-  'Energy': '#0b9cf1',
+type DailyPricesChartsProps = {
+  selectedSymbol: string,
 };
 
-function DailyPricesCharts(): ReactElement {
-  const [sectorsExcluded, setSectorsExcluded] = useState<string[]>([]);
-  const [pricePoints, setPricePoints] = useState<{ [symbol: string]: number | string, name: string }[]>([]);
-  const [lines, setLines] = useState<ReactElement[]>([]);
+function DailyPricesCharts(props: DailyPricesChartsProps): ReactElement {
+  const [pricePoints, setPricePoints] = useState<{ price: number, name: string }[]>([]);
+  const [lines, setLines] = useState<ReactElement>(<></>);
 
   const priceData = useSelector((state: RootState) => ({
     prices: state.data.prices,
@@ -30,54 +18,56 @@ function DailyPricesCharts(): ReactElement {
   }));
 
   useEffect(() => {
-    const tmpPrices: { [key: number]: { [symbol: string]: number | string, name: string } } = {};
-    const prices = sectorsExcluded.length
-      ? priceData.prices.filter((point) => !sectorsExcluded.includes(priceData.symbols[point.symbol].sector))
-      : priceData.prices;
+    const tmpPrices: { [key: number]: { price: number, name: string } } = {};
+    const symbol = props.selectedSymbol;
+    if (!symbol.length) return;
 
-    prices.forEach((point) => {
-      const val = tmpPrices[point.date];
-
-      if (val === undefined) {
-        tmpPrices[point.date] = { name: new Date(point.date).toLocaleDateString(), [point.symbol]: point.price };
-      } else {
-        tmpPrices[point.date][point.symbol] = point.price;
-      }
+    priceData.prices.forEach((point) => {
+      if (point.symbol === symbol)
+        tmpPrices[point.date] = { name: new Date(point.date).toLocaleDateString(), price: point.price };
     });
 
     const priceKeys = Object.keys(tmpPrices);
     priceKeys.sort((a, b) => Number(a) - Number(b));
 
+    let colour = SECTOR_TO_COLOUR[priceData.symbols[symbol]?.sector];
+    if (colour === undefined) colour = '#ffffff';
+
     setPricePoints(priceKeys.map(key => tmpPrices[Number(key)]));
-    setLines(Object.keys(priceData.symbols).map((x, i) => {
-      let colour = SECTOR_TO_COLOUR[priceData.symbols[x]?.sector];
-      if (colour === undefined) colour = '#ffffff';
-
-      return <Line
-        key={x}
-        type="monotone"
-        dataKey={x}
-        dot={false}
-        stroke={colour as string}
-      />;
-    }));
-  }, [sectorsExcluded, priceData.prices.length, priceData.symbols]);
-
-  console.log('render')
+    setLines(<Line
+      type="monotone"
+      key={symbol}
+      dataKey={'price'}
+      dot={false}
+      name='Price'
+      stroke={colour as string}
+    />
+    );
+  }, [priceData.prices.length, priceData.symbols, props.selectedSymbol]);
 
   return (
-    <div className="asx-prices-charts">
-      <SectorFilter
-        sectors={Object.keys(SECTOR_TO_COLOUR)}
-        sectorColours={SECTOR_TO_COLOUR}
-        sectorsExcluded={sectorsExcluded}
-        clickSector={setSectorsExcluded}
-      />
-      <ResponsiveContainer width='100%' height='100%'>
+    <div className="asx-chart">
+      <span className="chart-title">{props.selectedSymbol} - {priceData.symbols[props.selectedSymbol]?.company} - {priceData.symbols[props.selectedSymbol]?.sector}</span>
+      <ResponsiveContainer width='100%' height='99%'>
         <LineChart data={pricePoints}>
-          <XAxis dataKey="name" />
-          <YAxis />
-          {/* <Tooltip isAnimationActive={false} /> */}
+          <XAxis
+            dataKey="name"
+            label='Date'
+          />
+          <YAxis
+            domain={['auto', 'auto']}
+          >
+            <Label
+              angle={-90}
+              value='Price'
+              position='insideLeft'
+              style={{ textAnchor: 'middle' }}
+            />
+          </YAxis>
+          <Tooltip
+            isAnimationActive={false}
+            labelFormatter={(value) => `Date: ${value}`}
+          />
           {lines}
         </LineChart>
       </ResponsiveContainer>
