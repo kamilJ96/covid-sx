@@ -1,76 +1,96 @@
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, { ReactElement } from 'react';
 import { useSelector } from 'react-redux';
-import { Label, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import ReactEcharts from 'echarts-for-react';
+import { EChartOption } from 'echarts';
 import { RootState } from '../../redux/reducer';
-import { SECTOR_TO_COLOUR } from '../../types/dataTypes';
+import { AsxPrice, AsxSymbol, STRING_TO_COLOUR } from '../../types/dataTypes';
+import styles from '../../css/_theme.scss';
+
 
 type DailyPricesChartsProps = {
   selectedSymbol: string,
 };
 
-function DailyPricesCharts(props: DailyPricesChartsProps): ReactElement {
-  const [pricePoints, setPricePoints] = useState<{ price: number, name: string }[]>([]);
-  const [lines, setLines] = useState<ReactElement>(<></>);
+const getOption = (symbol: string, symbols: { [key: string]: AsxSymbol }, prices: AsxPrice[], title: string) => {
+  if (!symbol.length) return {};
 
+  const priceData: { name: string, value: [number, number] }[] = [];
+  const minMax: { min: number, max: number } = { min: Number.MAX_SAFE_INTEGER, max: Number.MIN_SAFE_INTEGER };
+
+  prices.forEach((point) => {
+    if (point.symbol === symbol) {
+      priceData.push({ name: new Date(point.date).toLocaleDateString(), value: [point.date, point.price] });
+
+      if (point.price > minMax.max) minMax.max = point.price;
+      if (point.price < minMax.min) minMax.min = point.price;
+    }
+  });
+
+  let colour = STRING_TO_COLOUR[symbols[symbol]?.sector];
+  if (colour === undefined) colour = '#ffffff';
+
+  minMax.min = Math.floor(minMax.min);
+  minMax.max = Math.ceil(minMax.max);
+
+  const option: EChartOption = {
+    title: {
+      text: title,
+      textStyle: { color: styles.fontColour, },
+    },
+    textStyle: { color: styles.fontColour, },
+    tooltip: {
+      trigger: 'axis',
+      formatter: function (params) {
+        if (Array.isArray(params)) {
+          const date = params[0].name;
+          const value = params[0].value as [number, number];
+
+          return `${date}: $${value[1]}`;
+        }
+        return '';
+      },
+    },
+    xAxis: {
+      type: 'time',
+      splitLine: { show: false },
+    },
+    yAxis: {
+      type: 'value',
+      splitLine: { show: false },
+      ...minMax
+    },
+    series: [{
+      name: 'Price',
+      type: 'line',
+      showSymbol: false,
+      hoverAnimation: false,
+      data: priceData,
+      lineStyle: {
+        color: colour,
+      }
+    }],
+  };
+
+  return option;
+};
+
+function DailyPricesCharts(props: DailyPricesChartsProps): ReactElement {
   const priceData = useSelector((state: RootState) => ({
     prices: state.data.prices,
     symbols: state.data.symbols,
   }));
 
-  useEffect(() => {
-    const tmpPrices: { [key: number]: { price: number, name: string } } = {};
-    const symbol = props.selectedSymbol;
-    if (!symbol.length) return;
-
-    priceData.prices.forEach((point) => {
-      if (point.symbol === symbol)
-        tmpPrices[point.date] = { name: new Date(point.date).toLocaleDateString(), price: point.price };
-    });
-
-    const priceKeys = Object.keys(tmpPrices);
-    priceKeys.sort((a, b) => Number(a) - Number(b));
-
-    let colour = SECTOR_TO_COLOUR[priceData.symbols[symbol]?.sector];
-    if (colour === undefined) colour = '#ffffff';
-
-    setPricePoints(priceKeys.map(key => tmpPrices[Number(key)]));
-    setLines(<Line
-      type="monotone"
-      key={symbol}
-      dataKey={'price'}
-      dot={false}
-      name='Price'
-      stroke={colour as string}
-    />
-    );
-  }, [priceData.prices.length, priceData.symbols, props.selectedSymbol]);
+  const title = `${props.selectedSymbol} - ${priceData.symbols[props.selectedSymbol]?.company} - ${priceData.symbols[props.selectedSymbol]?.sector}`;
+  const option = getOption(props.selectedSymbol, priceData.symbols, priceData.prices, title);
 
   return (
     <div className="asx-chart">
-      <span className="chart-title">{props.selectedSymbol} - {priceData.symbols[props.selectedSymbol]?.company} - {priceData.symbols[props.selectedSymbol]?.sector}</span>
-      <ResponsiveContainer width='100%' height='99%'>
-        <LineChart data={pricePoints}>
-          <XAxis
-            dataKey="name"
-            label='Date'
-          />
-          <YAxis
-            domain={['auto', 'auto']}
-          >
-            <Label
-              angle={-90}
-              value='Price'
-              position='insideLeft'
-              style={{ textAnchor: 'middle' }}
-            />
-          </YAxis>
-          <Tooltip
-            isAnimationActive={false}
-            labelFormatter={(value) => `Date: ${value}`}
-          />
-          {lines}
-        </LineChart>
-      </ResponsiveContainer>
+      <ReactEcharts
+        option={option}
+        notMerge={true}
+        lazyUpdate={true}
+        style={{ height: '100%', width: '100%' }}
+      />
     </div>
   );
 }

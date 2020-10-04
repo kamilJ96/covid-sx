@@ -74,9 +74,9 @@ export const WebSocketProvider = ({ children }: Props): ReactElement => {
         const symbolData = message.slice(2).split('|');
         symbolData.forEach((symbolString) => {
           const s = symbolString.split(',');
-          if (s.length === 4) {
-            const [symbol, company, sector, marketCap] = s;
-            symbols[symbol] = { company, sector: sector as SectorType, marketCap: BigInt(marketCap) };
+          if (s.length > 4) {
+            const [symbol, company, country, state, sector, industry, marketCap] = s;
+            symbols[symbol] = { company, sector: sector as SectorType, marketCap: BigInt(marketCap), country, state, industry };
           }
         });
 

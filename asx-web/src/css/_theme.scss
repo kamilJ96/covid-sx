@@ -16,3 +16,9 @@ $red-dark: #960000;
 $yellow: #d8f10b;
 $orange: #f1a00b;
 $green: #02de13;
+
+:export {
+    fontColour: $font-colour;
+    bgColour: $background-colour;
+    borderColour: $border-colour;
+}

@@ -1,11 +1,24 @@
-import React, { ReactElement, useState } from 'react';
+import React, { ReactElement } from 'react';
+import { GroupedKeys } from '../../types/dataTypes';
 
-export default function Header(): ReactElement {
-  const [view] = useState('daily');
+type HeaderProps = {
+  group: GroupedKeys,
+  changeGroup: (key: GroupedKeys) => void,
+}
+
+const defaultHeaderClass = 'asx-header-group';
+
+export default function Header(props: HeaderProps): ReactElement {
+  let sectorHeaderClass = defaultHeaderClass;
+  let stateHeaderClass = defaultHeaderClass;
+
+  if (props.group === GroupedKeys.sector) sectorHeaderClass += ' active';
+  else if (props.group === GroupedKeys.state) stateHeaderClass += ' active';
 
   return (
-    <div className="asx-header">
-      {view === 'daily' ? <div className="asx-header-daliy">Hello!</div> : null}
-    </div>
+    <header className="asx-header">
+      <span className={sectorHeaderClass} onClick={() => props.changeGroup(GroupedKeys.sector)}>Group By Sector</span>
+      <span className={stateHeaderClass} onClick={() => props.changeGroup(GroupedKeys.state)}>Group By State</span>
+    </header>
   );
 }

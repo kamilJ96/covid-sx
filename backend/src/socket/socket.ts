@@ -103,7 +103,7 @@ const setSymbolData = async (): Promise<string[] | false> => {
     const symbolsString: string[] = [];
 
     symbols.forEach(s => {
-      cachedSymbols += `${s.code},${s.company},${s.sector},${s.market_cap}|`;
+      cachedSymbols += `${s.code},${s.company},${s.country},${s.state},${s.sector},${s.industry},${s.market_cap}|`;
       symbolsString.push(s.code);
     });
 

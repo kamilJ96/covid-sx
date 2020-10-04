@@ -5,7 +5,7 @@ import { Log } from './utils.js';
 
 
 export const getSymbols = async (): Promise<AsxSymbol[]> => {
-  const symbols: AsxSymbol[] = await dbQuery('SELECT * FROM symbols');
+  const symbols: AsxSymbol[] = await dbQuery('SELECT * FROM symbols ORDER BY code ASC');
   if (!symbols.length) {
     Log('getSymbols', ENUM_LOG_LEVELS.ERR, 'Failed getting symbols, additional information is likely displayed above.');
   }
@@ -14,6 +14,6 @@ export const getSymbols = async (): Promise<AsxSymbol[]> => {
 };
 
 export const getDataForSymbols = async (symbols: string[]): Promise<PriceData[]> => {
-  const data: PriceData[] = await dbQuery('SELECT * FROM asx_d1 WHERE symbol = ANY ($1) ORDER BY date DESC, symbol ASC', [symbols]);
+  const data: PriceData[] = await dbQuery('SELECT * FROM asx_d1 WHERE symbol = ANY ($1) ORDER BY date ASC, symbol ASC', [symbols]);
   return data;
 };

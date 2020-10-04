@@ -4,10 +4,10 @@ import ReactEcharts from 'echarts-for-react';
 import { EChartOption } from 'echarts';
 import styles from '../../css/_theme.scss';
 import { RootState } from '../../redux/reducer';
-import { AsxPrice, AsxSymbol, GroupedTypes, SectorType, STRING_TO_COLOUR } from '../../types/dataTypes';
+import { AsxPrice, AsxSymbol, GroupedKeys, GroupedTypes, STRING_TO_COLOUR } from '../../types/dataTypes';
 
 type SeriesType = {
-  name: SectorType,
+  name: string,
   type: 'line',
   stack: string,
   data: { name: string, value: [number, number] }[],
@@ -17,7 +17,7 @@ type SeriesType = {
 };
 
 const defaultSeriesType: SeriesType = {
-  name: 'Energy',
+  name: '',
   type: 'line',
   stack: 'prices',
   data: [],
@@ -26,25 +26,27 @@ const defaultSeriesType: SeriesType = {
   hoverAnimation: false,
 };
 
-const getOption = (symbols: { [key: string]: AsxSymbol }, prices: AsxPrice[]) => {
+const getOption = (symbols: { [key: string]: AsxSymbol }, prices: AsxPrice[], groupKey: GroupedKeys) => {
   const data: SeriesType[] = [], legendData: EChartOption.Legend.LegendDataObject[] = [];
-  const tmpPrices: Map<SectorType, { [date: number]: number }> = new Map();
+  const tmpPrices: Map<GroupedTypes, { [date: number]: number }> = new Map();
 
   prices.forEach((point) => {
-    const sector = symbols[point.symbol].sector;
-    const val = tmpPrices.get(sector);
+    const group = symbols[point.symbol][groupKey] as GroupedTypes;
+    if (group.length) {
+      const val = tmpPrices.get(group);
 
-    if (!val) {
-      const p = { [point.date]: point.price };
-      tmpPrices.set(sector, p);
-    } else if (!val[point.date]) {
-      val[point.date] = point.price;
-    } else {
-      val[point.date] += point.price;
+      if (!val) {
+        const p = { [point.date]: point.price };
+        tmpPrices.set(group, p);
+      } else if (!val[point.date]) {
+        val[point.date] = point.price;
+      } else {
+        val[point.date] += point.price;
+      }
     }
   });
 
-  tmpPrices.forEach((d, sector) => {
+  tmpPrices.forEach((d, group) => {
     const priceKeys = Object.keys(d);
     priceKeys.sort((a, b) => Number(a) - Number(b));
 
@@ -52,27 +54,27 @@ const getOption = (symbols: { [key: string]: AsxSymbol }, prices: AsxPrice[]) =>
     const baselinePrice = d[firstDate];
 
     if (baselinePrice !== undefined) {
-      let colour = STRING_TO_COLOUR[sector];
+      let colour = STRING_TO_COLOUR[group];
       if (colour === undefined) colour = '#ffffff';
 
-      const sectorPrices = { ...defaultSeriesType };
-      sectorPrices.name = sector;
-      sectorPrices.data = [({ name: new Date(firstDate).toLocaleDateString(), value: [firstDate, 100] })];
-      sectorPrices.lineStyle = { color: colour };
-      sectorPrices.stack = sector;
+      const groupPrices = { ...defaultSeriesType };
+      groupPrices.name = group;
+      groupPrices.data = [({ name: new Date(firstDate).toLocaleDateString(), value: [firstDate, 100] })];
+      groupPrices.lineStyle = { color: colour };
+      groupPrices.stack = group;
 
-      legendData.push({ name: sector, textStyle: { color: colour } });
+      legendData.push({ name: group, textStyle: { color: colour } });
 
       for (let i = 1; i < priceKeys.length; i++) {
         const date = Number(priceKeys[i]);
         const p = d[date];
         if (p) {
           const change = 100 - ((baselinePrice - p) / baselinePrice) * 100;
-          sectorPrices.data.push({ name: new Date(date).toLocaleDateString(), value: [date, change] });
+          groupPrices.data.push({ name: new Date(date).toLocaleDateString(), value: [date, change] });
         }
       }
 
-      data.push(sectorPrices);
+      data.push(groupPrices);
     }
   });
 
@@ -83,7 +85,7 @@ const getOption = (symbols: { [key: string]: AsxSymbol }, prices: AsxPrice[]) =>
       right: '10%',
     },
     title: {
-      text: 'Cumulative Sector Prices Over Time',
+      text: `Relative Performance Over Time By ${groupKey.toUpperCase()}`,
       textStyle: { color: styles.fontColour, },
     },
     legend: {
@@ -132,7 +134,11 @@ const getOption = (symbols: { [key: string]: AsxSymbol }, prices: AsxPrice[]) =>
   return option;
 };
 
-function SectorPricesChart(): ReactElement {
+type GroupedPricesProps = {
+  groupKey: GroupedKeys,
+};
+
+function GroupedPrices(props: GroupedPricesProps): ReactElement {
   const priceData = useSelector((state: RootState) => ({
     prices: state.data.prices,
     symbols: state.data.symbols,
@@ -147,7 +153,7 @@ function SectorPricesChart(): ReactElement {
         clickSector={setSectorsExcluded}
       /> */}
       <ReactEcharts
-        option={getOption(priceData.symbols, priceData.prices)}
+        option={getOption(priceData.symbols, priceData.prices, props.groupKey)}
         notMerge={true}
         lazyUpdate={true}
         style={{ height: '100%', width: '100%' }}
@@ -157,4 +163,4 @@ function SectorPricesChart(): ReactElement {
   );
 }
 
-export default SectorPricesChart;
+export default GroupedPrices;

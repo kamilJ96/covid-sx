@@ -27,9 +27,24 @@ body {
     grid-template-rows: 30px 1fr;
   }
 
+  &header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-group {
+      font-size: 1.2em;
+      margin-right: 10px;
+      cursor: pointer;
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+
   &body {
-      height: 100%;
-      display: grid;
-      grid-template-rows: 1fr 1fr;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
   }
 }

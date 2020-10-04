@@ -3,7 +3,7 @@ import { ColDef, RowDataTransaction } from 'ag-grid-community';
 import { AgGridReact } from 'ag-grid-react';
 import { AgGridReact as AgGridReactType } from 'ag-grid-react/lib/agGridReact';
 
-import { AsxSymbolStat } from '../../types/dataTypes';
+import { AsxSymbolStat, SectorType, STRING_TO_COLOUR } from '../../types/dataTypes';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/reducer';
 
@@ -11,7 +11,7 @@ import '../../css/_daily-prices.scss';
 import { dateRenderer } from './Renderers';
 import DailyPricesCharts from './DailyPricesCharts';
 
-const fieldName = (header: keyof AsxSymbolStat | 'company' | 'sector'): string => header;
+const fieldName = (header: keyof AsxSymbolStat | 'company' | 'sector' | 'state'): string => header;
 
 
 const columnDefs: ColDef[] = [
@@ -19,26 +19,31 @@ const columnDefs: ColDef[] = [
     headerName: 'Symbol',
     field: fieldName('symbol'),
     width: 70,
+    tooltipField: 'company',
   },
   {
     headerName: 'Company',
     field: fieldName('company'),
+    tooltipField: 'company',
   },
   {
     headerName: 'Sector',
     field: fieldName('sector'),
-    maxWidth: 200,
+    maxWidth: 180,
+    cellStyle: (params) => ({
+      color: STRING_TO_COLOUR[params.value as SectorType],
+    }),
+    tooltipField: 'sector',
   },
   {
-    headerName: 'Highest Price',
-    field: fieldName('highestPrice'),
-    maxWidth: 85,
+    headerName: 'State',
+    field: fieldName('state'),
+    width: 70,
   },
   {
-    headerName: 'Highest Date',
-    field: fieldName('highestDate'),
-    cellRenderer: (params) => dateRenderer(params.value),
-    maxWidth: 85,
+    headerName: 'Jan. Avg',
+    field: fieldName('janAvg'),
+    maxWidth: 75,
   },
   {
     headerName: 'Lowest Price',
@@ -57,7 +62,7 @@ const columnDefs: ColDef[] = [
     maxWidth: 85
   },
   {
-    headerName: 'Recovered %',
+    headerName: 'Recovered From Avg.',
     field: fieldName('recovered'),
     cellClass: (params) => {
       if (params.value <= 25) return 'recovered dark-red';
@@ -85,8 +90,11 @@ function DailyPrices(): ReactElement {
 
     grid.current?.api?.forEachNode((node) => {
       const data = node.data;
-      data.company = priceData.symbols[node.data.symbol].company;
-      data.sector = priceData.symbols[node.data.symbol].sector;
+      const symbolData = priceData.symbols[node.data.symbol];
+
+      data.company = symbolData.company;
+      data.sector = symbolData.sector;
+      data.state = symbolData.state;
       transaction.update?.push(data);
     });
 

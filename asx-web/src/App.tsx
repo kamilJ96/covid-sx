@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useState } from 'react';
 import { useSelector } from 'react-redux';
 import DailyPrices from './components/DailyPrices/DailyPrices';
 
@@ -8,9 +8,13 @@ import './css/_grid.scss';
 import { RootState } from './redux/reducer';
 import { WebSocketProvider } from './components/WebSocket/WebSocket';
 import Loading from './components/Loading';
-import SectorPricesChart from './components/SectorPrices/SectorPricesChart';
+import GroupedPrices from './components/GroupedPrices/GroupedPrices';
+import { GroupedKeys } from './types/dataTypes';
+import Header from './components/Header/Header';
 
 function App(): ReactElement {
+  const [group, setGroup] = useState<GroupedKeys>(GroupedKeys.sector);
+
   const asxData = useSelector((state: RootState) => ({
     symbols: state.data.symbols,
     prices: state.data.prices,
@@ -20,12 +24,12 @@ function App(): ReactElement {
     <WebSocketProvider>
       <div className="asx-wrapper">
         {asxData.prices.length && Object.keys(asxData.symbols).length ? <>
-          <header className="asx-header">
-            <span>Number Of Symbols: {Object.keys(asxData.symbols).length}</span>
-            <span>Price Points: {asxData.prices.length} </span>
-          </header>
+          <Header
+            group={group}
+            changeGroup={setGroup}
+          />
           <div className="asx-body">
-            <SectorPricesChart />
+            <GroupedPrices groupKey={group} />
             <DailyPrices />
           </div>
         </>
