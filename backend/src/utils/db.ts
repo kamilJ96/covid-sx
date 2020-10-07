@@ -3,7 +3,8 @@ import { ENUM_LOG_LEVELS } from './constants.js';
 import { Log } from './utils.js';
 const { Pool } = pg;
 
-const dbConf = { user: 'kam', host: 'localhost', port: 5432, password: 'smokingcausesheartdisease', database: 'asx_data' };
+// export const dbConf = { user: 'kam', host: 'localhost', port: 5432, password: 'smokingcausesheartdisease', database: 'tmp_asx' };
+export const dbConf = { user: 'kam', host: 'localhost', port: 5432, password: 'smokingcausesheartdisease', database: 'asx_data' };
 const db = new Pool(dbConf);
 
 const _dbQuery = async <T>(query: string, params: unknown[] = []): Promise<T[] | null> => {

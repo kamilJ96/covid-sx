@@ -4,7 +4,7 @@ import ReactEcharts from 'echarts-for-react';
 import { EChartOption } from 'echarts';
 import styles from '../../css/_theme.scss';
 import { RootState } from '../../redux/reducer';
-import { AsxPrice, AsxSymbol, GroupedKeys, GroupedTypes, STRING_TO_COLOUR } from '../../types/dataTypes';
+import { AsxPrice, AsxSymbol, AsxSymbolStat, GroupedKeys, GroupedTypes, STRING_TO_COLOUR } from '../../types/dataTypes';
 
 type SeriesType = {
   name: string,
@@ -26,23 +26,39 @@ const defaultSeriesType: SeriesType = {
   hoverAnimation: false,
 };
 
-const getOption = (symbols: { [key: string]: AsxSymbol }, prices: AsxPrice[], groupKey: GroupedKeys) => {
+const getOption = (symbols: { [key: string]: AsxSymbol }, prices: AsxPrice[], groupKey: GroupedKeys, symbolStats: AsxSymbolStat[]) => {
   const data: SeriesType[] = [], legendData: EChartOption.Legend.LegendDataObject[] = [];
   const tmpPrices: Map<GroupedTypes, { [date: number]: number }> = new Map();
+  const baselineDate = Number(new Date('2020/02/01'));
 
   prices.forEach((point) => {
-    const group = symbols[point.symbol][groupKey] as GroupedTypes;
-    if (group.length) {
-      const val = tmpPrices.get(group);
+    if (point.date >= baselineDate) {
+      const group = symbols[point.symbol][groupKey] as GroupedTypes;
+      if (group.length) {
+        const val = tmpPrices.get(group);
 
-      if (!val) {
-        const p = { [point.date]: point.price };
-        tmpPrices.set(group, p);
-      } else if (!val[point.date]) {
-        val[point.date] = point.price;
-      } else {
-        val[point.date] += point.price;
+        if (!val) {
+          const p = { [point.date]: point.price };
+          tmpPrices.set(group, p);
+        } else if (!val[point.date]) {
+          val[point.date] = point.price;
+        } else {
+          val[point.date] += point.price;
+        }
       }
+    }
+  });
+
+  const avgPrices: Map<GroupedTypes, number> = new Map();
+  symbolStats.forEach(symbol => {
+    const group = symbols[symbol.symbol][groupKey] as GroupedTypes;
+    if (group.length) {
+      const avgGroupPrice = avgPrices.get(group);
+      let newPrice = symbol.janAvg;
+
+      if (avgGroupPrice) newPrice += avgGroupPrice;
+
+      avgPrices.set(group, newPrice);
     }
   });
 
@@ -50,16 +66,14 @@ const getOption = (symbols: { [key: string]: AsxSymbol }, prices: AsxPrice[], gr
     const priceKeys = Object.keys(d);
     priceKeys.sort((a, b) => Number(a) - Number(b));
 
-    const firstDate = Number(priceKeys[0]);
-    const baselinePrice = d[firstDate];
-
-    if (baselinePrice !== undefined) {
+    if (avgPrices.has(group)) {
+      const baselinePrice = avgPrices.get(group) as number;
       let colour = STRING_TO_COLOUR[group];
       if (colour === undefined) colour = '#ffffff';
 
       const groupPrices = { ...defaultSeriesType };
       groupPrices.name = group;
-      groupPrices.data = [({ name: new Date(firstDate).toLocaleDateString(), value: [firstDate, 100] })];
+      groupPrices.data = [({ name: new Date(baselineDate).toLocaleDateString(), value: [baselineDate, 100] })];
       groupPrices.lineStyle = { color: colour };
       groupPrices.stack = group;
 
@@ -142,6 +156,7 @@ function GroupedPrices(props: GroupedPricesProps): ReactElement {
   const priceData = useSelector((state: RootState) => ({
     prices: state.data.prices,
     symbols: state.data.symbols,
+    symbolStats: state.data.symbolStats,
   }));
 
   return (
@@ -153,7 +168,7 @@ function GroupedPrices(props: GroupedPricesProps): ReactElement {
         clickSector={setSectorsExcluded}
       /> */}
       <ReactEcharts
-        option={getOption(priceData.symbols, priceData.prices, props.groupKey)}
+        option={getOption(priceData.symbols, priceData.prices, props.groupKey, priceData.symbolStats)}
         notMerge={true}
         lazyUpdate={true}
         style={{ height: '100%', width: '100%' }}

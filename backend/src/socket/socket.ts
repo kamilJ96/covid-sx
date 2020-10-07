@@ -8,12 +8,15 @@ import { Log, validJson } from '../utils/utils.js';
 import { ENUM_LOG_LEVELS, SOCKET_SERVER_HOST, SOCKET_SERVER_PORT } from '../utils/constants.js';
 import { MessageHeaders, validateClientMessage } from './msgTypes.js';
 import { getDataForSymbols, getSymbols } from '../utils/dbQueries.js';
+import { startDownloader } from '../data/getData.js';
 
 const server = createServer();
 const ws = new Server({ noServer: true });
 
 let cachedAsxData = '';
 let cachedSymbols = '';
+
+const dbSymbols: string[] = [];
 
 const sendMessage = (conn: WebSocket, data: string, header: string, binary = true): void => {
   conn.send(data, { binary }, (err) => {
@@ -105,6 +108,7 @@ const setSymbolData = async (): Promise<string[] | false> => {
     symbols.forEach(s => {
       cachedSymbols += `${s.code},${s.company},${s.country},${s.state},${s.sector},${s.industry},${s.market_cap}|`;
       symbolsString.push(s.code);
+      dbSymbols.push(s.code);
     });
 
     return symbolsString;
@@ -136,7 +140,10 @@ export const startSocket = (): void => {
     if (symbolsString !== false) {
       const data = await setAsxData(symbolsString);
 
-      if (data && data.length) Log('wsServer', ENUM_LOG_LEVELS.INFO, 'Successfully Cached ASX/Symbol Data.');
+      if (data && data.length) {
+        startDownloader(dbSymbols);
+        Log('wsServer', ENUM_LOG_LEVELS.INFO, 'Successfully Cached ASX/Symbol Data.');
+      }
     }
   });
 };

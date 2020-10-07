@@ -1,7 +1,7 @@
 export type PriceData = {
   symbol: string,
   date: Date,
-  price: string,
+  price: number,
   volume: number
 }
 
