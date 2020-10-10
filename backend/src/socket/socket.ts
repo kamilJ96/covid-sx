@@ -1,5 +1,5 @@
 import WebSocket from 'ws';
-const { Server } = WebSocket;
+const { Server, OPEN } = WebSocket;
 import { createServer, IncomingMessage } from 'http';
 import { parse } from 'url';
 import { Socket } from 'net';
@@ -46,7 +46,7 @@ ws.on('connection', (conn: WebSocket, req: IncomingMessage) => {
 
               const asxData = await setAsxData(symbolData);
 
-              if (!asxData) {
+              if (!asxData.length) {
                 sendMessage(conn, `${MessageHeaders.ERROR}Failed Getting ASX Data.`, 'ASX Data');
                 return;
               }
@@ -118,12 +118,16 @@ const setSymbolData = async (): Promise<string[] | false> => {
   return false;
 };
 
-const setAsxData = async (symbols: string[]): Promise<string | false> => {
+const setAsxData = async (symbols: string[]): Promise<string> => {
   cachedAsxData = MessageHeaders.DAILY_DATA.toString();
   const data = await getDataForSymbols(symbols);
 
   if (!data.length) {
     Log('startSocket', ENUM_LOG_LEVELS.ERR, 'Failed Getting Price Data For Symbols: ', symbols.slice(0, 30), '...');
+    return cachedAsxData;
+  }
+  else {
+    Log('setAsxData', ENUM_LOG_LEVELS.DEBUG, `${data.length} Quotes Returned.`);
   }
 
   data.forEach(point => {
@@ -131,6 +135,15 @@ const setAsxData = async (symbols: string[]): Promise<string | false> => {
   });
 
   return cachedAsxData;
+};
+
+export type RefreshDataFn = () => Promise<void>;
+
+const refreshAsxData = async (): Promise<void> => {
+  const newData = await setAsxData(dbSymbols);
+  if (newData.length) ws.clients.forEach(conn => {
+    if (conn.readyState === OPEN) sendMessage(conn, newData, 'ASX Data');
+  });
 };
 
 export const startSocket = (): void => {
@@ -141,7 +154,7 @@ export const startSocket = (): void => {
       const data = await setAsxData(symbolsString);
 
       if (data && data.length) {
-        startDownloader(dbSymbols);
+        startDownloader(dbSymbols, true, refreshAsxData);
         Log('wsServer', ENUM_LOG_LEVELS.INFO, 'Successfully Cached ASX/Symbol Data.');
       }
     }

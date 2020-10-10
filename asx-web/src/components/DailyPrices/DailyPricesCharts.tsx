@@ -50,6 +50,12 @@ const getOption = (symbol: string, symbols: { [key: string]: AsxSymbol }, prices
         return '';
       },
     },
+    dataZoom: [
+      {
+        type: 'inside',
+        show: true,
+      }
+    ],
     xAxis: {
       type: 'time',
       splitLine: { show: false },

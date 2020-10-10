@@ -49,3 +49,6 @@ export const validJson = (msg: string): { [key: string]: unknown } | false => {
 
   return false;
 };
+
+
+export const dbConf = { user: 'kam', password: 'smokingcausesheartdisease', host: 'localhost', port: 5432, database: 'asx_data' };

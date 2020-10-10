@@ -3,11 +3,12 @@ import { IInitOptions, IMain } from 'pg-promise';
 import yahoo from 'yahoo-finance';
 const { historical } = yahoo;
 
-import { dbConf } from '../utils/db.js';
+import { dbConf } from '../utils/utils.js';
 import { ENUM_LOG_LEVELS } from '../utils/constants.js';
 import { getLatestDate } from '../utils/dbQueries.js';
 import { PriceData } from '../utils/dbTypes.js';
 import { Log } from '../utils/utils.js';
+import { RefreshDataFn } from '../socket/socket.js';
 
 const initOpts: IInitOptions = {
   capSQL: true,
@@ -32,31 +33,50 @@ type HistoricalQuote = {
 
 const downloadData = async (symbols: string[], startDate: string, endDate: string): Promise<PriceData[]> => {
   const data: PriceData[] = [];
+  const symbolDownloadStatus: { [key: string]: boolean } = {};
 
   Log('downloadData', ENUM_LOG_LEVELS.DEBUG, `Begin download from ${startDate} to ${endDate} for ${symbols.length} Symbols.`);
 
-  for (const symbol of symbols) {
+  for (let i = 0; i < symbols.length; i += 20) {
+    const symbolsToGet = symbols.slice(i, i + 20);
     try {
-      Log('downloadData', ENUM_LOG_LEVELS.DEBUG, 'Downloading Data For ', symbol);
+      Log('downloadData', ENUM_LOG_LEVELS.DEBUG, 'Downloading Data For ', symbolsToGet);
       const res = await historical({
-        symbol,
+        symbols: symbolsToGet,
         from: startDate,
         to: endDate,
         period: 'd'
       });
 
-      const s = symbol.split('.')[0];
-
-      if (res)
-        res.forEach((quote: HistoricalQuote) => {
-          const price = quote.adjClose ? quote.adjClose : quote.close ? quote.close : 0;
-          data.push({ date: quote.date, price, symbol: s, volume: quote.volume });
+      if (res) {
+        Object.keys(res).forEach(s => {
+          const symbol = s.split('.')[0];
+          symbolDownloadStatus[s] = true;
+          res[s].forEach((quote: HistoricalQuote) => {
+            const price = quote.adjClose ? quote.adjClose : quote.close ? quote.close : 0;
+            data.push({ date: quote.date, price, symbol, volume: quote.volume });
+          });
         });
-      else
-        Log('downloadData', ENUM_LOG_LEVELS.ERR, 'No Data Returned For ', symbol);
-
+      }
+      else {
+        Log('downloadData', ENUM_LOG_LEVELS.ERR, 'No Data Returned For ', symbolsToGet);
+        symbolsToGet.forEach(s => symbolDownloadStatus[s] = false);
+      }
     } catch (err) {
-      Log('downloadData', ENUM_LOG_LEVELS.ERR, 'Failed To Download Data For ', symbol, ' | Error: ', err);
+      Log('downloadData', ENUM_LOG_LEVELS.ERR, 'Failed To Download Data For ', symbols, ' | Error: ', err);
+      symbolsToGet.forEach(s => symbolDownloadStatus[s] = false);
+    }
+  }
+
+  if (symbols.length > 1) {
+    for (const symbol of Object.keys(symbolDownloadStatus)) {
+      if (!symbolDownloadStatus[symbol]) {
+        const symbolData = await downloadData([symbol], startDate, endDate);
+        if (symbolData.length) {
+          data.splice(0, 0, ...symbolData);
+          Log('downloadData', ENUM_LOG_LEVELS.DEBUG, 'Successfully downloaded data for ', symbol, ' manually.');
+        }
+      }
     }
   }
 
@@ -75,7 +95,12 @@ const dateFormatter = (date: Date): string => {
 
 const checkNewQuote = (startDate: Date, endDate: Date): boolean => {
   const currDay = endDate.getUTCDay();
-  if (currDay === 6 || currDay === 7) return false;
+
+  // Weekend check, won't be any new quotes unless we don't have up-to-date quotes
+  if (currDay === 6 || currDay === 7) {
+    if (startDate.getUTCDay() !== 5 || Number(endDate) - Number(startDate) >= 86400000 * (endDate.getUTCDay() - 4)) return true;
+    return false;
+  }
 
   if (endDate.getUTCDate() !== startDate.getUTCDate()) {
     // 7am UTC is 6pm AEDT/5pm AEST so the ASX market will definitely be closed by now (get fucked DST)
@@ -100,18 +125,24 @@ const getTimeUntilNextQuote = (): number => {
   return diff;
 };
 
-export const startDownloader = async (symbols: string[], init = true): Promise<void> => {
+
+export const startDownloader = async (symbols: string[], init = true, refreshData?: RefreshDataFn): Promise<void> => {
   const logSource = 'startDownloader';
 
+  // Format symbols to Yahoo code
   if (init) {
     Log(logSource, ENUM_LOG_LEVELS.INFO, 'Data Downloader Initialised For ', symbols.length, ' symbols.');
     symbols = symbols.map(x => `${x}.AX`);
   }
 
-  const startDate = await getLatestDate();
+  // If startDate is null then we don't have any quotes currently, so start from Jan 1st
+  let startDate = await getLatestDate();
+  let newQuote = true;
   const endDate = new Date();
 
-  const newQuote = checkNewQuote(startDate, endDate);
+  if (startDate == null) startDate = new Date('2020-01-01T00:00:00Z');
+  else newQuote = checkNewQuote(startDate, endDate);
+
   Log(logSource, ENUM_LOG_LEVELS.DEBUG, 'Latest Date In DB: ', startDate.toISOString(), ' | Current Date: ', endDate.toISOString());
 
   if (newQuote) {
@@ -125,8 +156,11 @@ export const startDownloader = async (symbols: string[], init = true): Promise<v
         const query = pgp.helpers.insert(data, cs);
         await db.none(query);
         Log(logSource, ENUM_LOG_LEVELS.INFO, ':) Inserted ', data.length, ' New Quotes. :)');
+
+        if (refreshData) refreshData();
+
       } catch (err) {
-        Log(logSource, ENUM_LOG_LEVELS.ERR, '*** Error Inserting New Quotes: ', err.message, 'First Ten Quotes: ', data.slice(0, 10));
+        Log(logSource, ENUM_LOG_LEVELS.ERR, '*** Error Inserting New Quotes: ', err.message, 'First Ten Quotes: ', JSON.stringify(data.slice(0, 10)));
       }
     }
     else {
@@ -139,5 +173,5 @@ export const startDownloader = async (symbols: string[], init = true): Promise<v
 
   const intervalLength = getTimeUntilNextQuote();
   await timer(intervalLength);
-  startDownloader(symbols);
+  startDownloader(symbols, false);
 };

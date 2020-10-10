@@ -18,9 +18,9 @@ export const getDataForSymbols = async (symbols: string[]): Promise<PriceData[]>
   return data;
 };
 
-export const getLatestDate = async (): Promise<Date> => {
+export const getLatestDate = async (): Promise<Date | null> => {
   const data: PriceData[] = await dbQuery('SELECT * FROM asx_d1 ORDER BY date DESC LIMIT 1');
   
   if (data.length) return data[0].date;
-  return new Date(0);
+  return null;
 };

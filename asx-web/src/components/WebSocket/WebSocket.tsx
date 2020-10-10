@@ -160,6 +160,7 @@ export const WebSocketProvider = ({ children }: Props): ReactElement => {
       if (ws.current?.readyState === WebSocket.CONNECTING || ws.current?.readyState === WebSocket.OPEN)
         ws.current.close();
     });
+    //eslint-disable-next-line
   }, []);
 
   return <WebSocketContext.Provider value={{ sendMessage }}>{children}</WebSocketContext.Provider>;

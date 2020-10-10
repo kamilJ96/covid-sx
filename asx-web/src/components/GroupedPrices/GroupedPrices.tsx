@@ -102,6 +102,12 @@ const getOption = (symbols: { [key: string]: AsxSymbol }, prices: AsxPrice[], gr
       text: `Relative Performance Over Time By ${groupKey.toUpperCase()}`,
       textStyle: { color: styles.fontColour, },
     },
+    dataZoom: [
+      {
+        type: 'inside',
+        show: true,
+      }
+    ],
     legend: {
       show: true,
       orient: 'vertical',
